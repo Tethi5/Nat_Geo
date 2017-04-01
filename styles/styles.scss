@@ -1,4 +1,3 @@
-
 $primary-color: black;
 $secondary-color: white;
 $full-screen: 100vw;
@@ -20,88 +19,127 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		float: left;
 		width: 16vw;
 		border-right: $border;
-		margin-top:$line;
+		margin-top: $line;
 		font-weight: 900;
 		font: 100% $font-stack;
 	}
+
 	.middle {
 		height: 4vh;
 		width: 75vw;
 		float: left;
 		margin-top: $line;
 		padding-left: 15px;
-
 		border-right: $border;
 	}
+
 	.right {
 		height: 4vh;
 		float: right;
 		width: 9vw;
 		margin-top: $line;
-
 	}
+
 	span {
 		float: right;
 		padding-right: 20px;
 	}
+
 	.left {
 		float: left;
 	}
 }
+
 .bar2 {
 	width: $full-screen;
 	height: 14vh;
 	background-color: $secondary-color;
 	border: $border;
-	padding-right: 0vw;
- div {
-	 float: left;
-	 padding-right: 6vw;
-   margin-top: 5vh;
- }
- span {
-	 padding-right: 4vw;
-     padding-left: 3vw;
-     border-right: solid thin grey;
-     font: "Didact Gothic",sans-serif,grey;
-     font-weight: 400;
-     color: darkgrey;
-     font-size: 105%;
- }
+	padding-right: 0;
+
+	div {
+		float: left;
+		padding-right: 6vw;
+		margin-top: 5vh;
+	}
+
+	span {
+		padding-right: 4vw;
+		padding-left: 3vw;
+		border-right: solid thin grey;
+		font: "Didact Gothic",sans-serif,grey;
+		font-weight: 400;
+		color: darkgrey;
+		font-size: 105%;
+	}
 }
+
 #buttn {
 	float: right;
-	margin-top: 0px;
-	padding-right: 0px;
+	margin-top: 0;
+	padding-right: 0;
+
 	.button {
 		height: 13vh;
 		width: 9vw;
-		background-color: darkgrey;
-		border: none;
+		background-color: white;
+		border: solid;
+		float:right;
+
+		#telli {
+			background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png");
+			background-size: 35px 35px;
+			background-repeat: no-repeat;
+			width: 30px;
+			margin-top: 20px;
+		}
+		#ham {
+			background-image: url(https://rsna2016.rsna.org/images/hamburger-stale.png);
+			background-size: 35px 35px;
+			background-repeat: no-repeat;
+			width: 35px;
+			margin-top: 20px;
+		}
 	}
 }
+
 #size1 {
-	margin-top: 0px;
-	padding-right: 0px;
+	margin-top: 0;
+	padding-right: 0;
 	height: 14vh;
 }
+
 #logo {
 	height: 12vh;
-    width: 15vw;
-    background-size: 180px 110px;
-    background-image: url(http://logok.org/wp-content/uploads/2014/06/National-Geographic-logo.png);
-    margin-top: 0px;
-    padding-right: 0px;
-    background-repeat: no-repeat;
-    margin-left: 25px;
-    margin-top: -9px;
+	width: 15vw;
+	background-size: 180px 110px;
+	background-image: url("http://logok.org/wp-content/uploads/2014/06/National-Geographic-logo.png");
+	margin-top: 0;
+	padding-right: 0;
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	margin-top: -9px;
 }
 
-
-
-
 .footer {
-  height: 50vh;
-  width: 100vw;
-  background-color: lightgrey;
+	height: 50vh;
+	width: 100vw;
+	background-color: lightgrey;
+
+	div {
+		height: 40vh;
+		width: 40vw;
+		background-color: darkgrey;
+		border-right: $border;
+	}
+
+	#lefty {
+		width: 40vw;
+		float: left;
+	}
+
+	#righty {
+		float: right;
+		width: 40vw;
+	}
 }

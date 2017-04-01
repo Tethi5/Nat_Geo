@@ -29,14 +29,18 @@
 	<div id="logo"></div>
 </div>
 	<div class="inBar">
-	<span class="link">LATEST STORIES</span>
+	<span class="link">
+		<a ui-sref="latest">LATEST STORIES</a></span>
   <span class="link">PHOTO OF THE DAY</span>
   <span class="link">CLIMATE CHANGE</span>
 </div>
 <div id="buttn">
 	<button class="button">
+		<svg id="ham"></svg>
 	</button>
-	<button class="button"></button>
+	<button class="button">
+		<svg id="telli"></svg>
+	</button>
 </div>
 </div>
 <ui-views></ui-views>
@@ -45,7 +49,10 @@
 
 
 
-<footer class="footer"></footer>
+<!-- <div class="footer">
+	<div id="lefty"  ></div>
+	<div id="righty" ></div>
+</div> -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
 <script src="./app.js"></script>
