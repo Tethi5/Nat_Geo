@@ -1,0 +1,107 @@
+
+$primary-color: black;
+$secondary-color: white;
+$full-screen: 100vw;
+$border: solid thin grey;
+$line: 18px;
+$font-stack: 'Arimo', serif;
+$font-stack1: 'Didact Gothic', sans-serif, grey;
+
+.bar {
+	text-align: center;
+	color: $secondary-color;
+	font: 100% $font-stack;
+	background-color: $primary-color;
+	width: $full-screen;
+	height: 8vh;
+
+	div {
+		height: 4vh;
+		float: left;
+		width: 16vw;
+		border-right: $border;
+		margin-top:$line;
+		font-weight: 900;
+		font: 100% $font-stack;
+	}
+	.middle {
+		height: 4vh;
+		width: 75vw;
+		float: left;
+		margin-top: $line;
+		padding-left: 15px;
+
+		border-right: $border;
+	}
+	.right {
+		height: 4vh;
+		float: right;
+		width: 9vw;
+		margin-top: $line;
+
+	}
+	span {
+		float: right;
+		padding-right: 20px;
+	}
+	.left {
+		float: left;
+	}
+}
+.bar2 {
+	width: $full-screen;
+	height: 14vh;
+	background-color: $secondary-color;
+	border: $border;
+	padding-right: 0vw;
+ div {
+	 float: left;
+	 padding-right: 6vw;
+   margin-top: 5vh;
+ }
+ span {
+	 padding-right: 4vw;
+     padding-left: 3vw;
+     border-right: solid thin grey;
+     font: "Didact Gothic",sans-serif,grey;
+     font-weight: 400;
+     color: darkgrey;
+     font-size: 105%;
+ }
+}
+#buttn {
+	float: right;
+	margin-top: 0px;
+	padding-right: 0px;
+	.button {
+		height: 13vh;
+		width: 9vw;
+		background-color: darkgrey;
+		border: none;
+	}
+}
+#size1 {
+	margin-top: 0px;
+	padding-right: 0px;
+	height: 14vh;
+}
+#logo {
+	height: 12vh;
+    width: 15vw;
+    background-size: 180px 110px;
+    background-image: url(http://logok.org/wp-content/uploads/2014/06/National-Geographic-logo.png);
+    margin-top: 0px;
+    padding-right: 0px;
+    background-repeat: no-repeat;
+    margin-left: 25px;
+    margin-top: -9px;
+}
+
+
+
+
+.footer {
+  height: 50vh;
+  width: 100vw;
+  background-color: lightgrey;
+}

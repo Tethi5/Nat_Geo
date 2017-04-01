@@ -1,0 +1,38 @@
+/*
+.bar {
+	background-color: black;
+	width: 100vw;
+	height: 6vh;
+}
+  .bar2 {
+  	width: 100vw;
+  	height: 14vh;
+  	color: blue;
+  	border-bottom: solid black;
+  }
+  .left {
+    height: 6vh;
+    float: left;
+    width: 16vw;
+    border-right: solid grey;
+  }
+  .middle {
+    height: 6vh;
+    width: 75vw;
+    float: left;
+
+    border-right: solid grey;
+  }
+  .right {
+    height: 6vh;
+    float: right;
+    width: 9vw;
+
+  }
+/*# sourceMappingURL=maps/styles.css.map */
+.footer {
+  height: 50vh;
+  width: 100vw;
+  background-color: lightgrey;
+
+}*/

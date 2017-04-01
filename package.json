@@ -1,0 +1,31 @@
+{
+  "name": "Nat_Geo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.0",
+    "body-parser": "^1.17.1",
+    "del": "^2.2.2",
+    "express": "^4.15.2",
+    "gulp-babel": "^6.1.2",
+    "gulp-cachebust": "0.0.6",
+    "gulp-print": "^2.0.1",
+    "gulp-sourcemaps": "^2.5.0",
+    "nodes": "^0.1.0"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-util": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

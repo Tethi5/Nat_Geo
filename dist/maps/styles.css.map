@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,IAAI,CAAC;EACJ,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI,GACZ","file":"../styles.css","sourcesContent":[".bar {\r\n\tbackground-color: black;\r\n\twidth: 100vw;\r\n\theight: 10vh;\r\n}\r\n"]}
