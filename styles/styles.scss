@@ -49,12 +49,16 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		float: left;
 	}
 }
-
+.color {
+	color: #FBD42C;
+	font-size: 80%;
+	font-family: 'Arimo';
+	font-weight: bold;
+}
 .bar2 {
 	width: $full-screen;
-	height: 14vh;
+	height: 13vh;
 	background-color: $secondary-color;
-	border: $border;
 	padding-right: 0;
 
 	div {
@@ -83,7 +87,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		height: 13vh;
 		width: 9vw;
 		background-color: white;
-		border: solid;
+		border: none;
 		float:right;
 
 		#telli {
@@ -102,7 +106,98 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		}
 	}
 }
+.header {
+	height:66vh;
+	width: $full-screen;
+	background-image: url(http://hdwallpaper20.com/wp-content/uploads/2016/10/national-geographic-wallpaper-free-Download4.jpg);
+	float:left;
+	vertical-align:bottom;
+	color: #F7F6F4;
+	position:relative;
+	background-size: cover;
+	font-family: 'Bitter', serif;
+	padding-top: 45vh;
+}
+#label {
 
+	bottom: 0px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-left: 9vw;
+    background-color: #FBD42C;
+    padding-top: 0px;
+    font-size: 100%;
+    color: black;
+    font-family: 'Bitter';
+    border-radius: 4px;
+
+
+
+}
+
+#Title {
+	position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 170%;
+    height: 18vh;
+    width: 45vw;
+    padding-left: 3vw;
+		margin-left: 8vw;
+		color: white;
+		padding-top: 16px;
+		background-image:radial-gradient(rgba(24,24,24,0) 0%, black 80%);
+    border-top-right-radius: 5px;
+		font-weight: 500;
+}
+
+
+#Title1 {
+	position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 100%;
+    height: 18vh;
+    width: 45vw;
+    padding-left: 3vw;
+    padding-top: 7vh;
+		border-left-style: solid;
+		border-left-color: #FBD42C;
+		border-left-width: thick;
+		margin-left: 8vw;
+		color: white;
+		border-top-right-radius: 5px;
+		font-family: 'Arimo';
+
+
+}
+#miniTitle {
+	color: white;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    padding-left: 3vw;
+    padding-bottom: 2vh;
+    margin-left: 8vw;
+    font-size: 130%;
+}
+.filler {
+	height: 4vh;
+	background-color: black;
+	width: $full-screen;
+	float: left;
+	position: relative;
+
+}
+.wrapper {
+	background-image: url(http://voices.nationalgeographic.com/files/2014/08/NationalGeographic_1272918.jpg);
+	height: 70vh;
+	width: $full-screen;
+	float: left;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 #size1 {
 	margin-top: 0;
 	padding-right: 0;
@@ -110,7 +205,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 }
 
 #logo {
-	height: 12vh;
+	height: 13vh;
 	width: 15vw;
 	background-size: 180px 110px;
 	background-image: url("http://logok.org/wp-content/uploads/2014/06/National-Geographic-logo.png");
