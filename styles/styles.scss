@@ -3,7 +3,7 @@ $secondary-color: white;
 $full-screen: 100vw;
 $border: solid thin grey;
 $line: 18px;
-$font-stack: 'Arimo', serif;
+$font-stack: 'Arimo', serif, 100;
 $font-stack1: 'Didact Gothic', sans-serif, grey;
 
 .bar {
@@ -182,7 +182,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
     font-size: 130%;
 }
 .filler {
-	height: 4vh;
+	height: 2vh;
 	background-color: black;
 	width: $full-screen;
 	float: left;
@@ -190,13 +190,37 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 
 }
 .wrapper {
-	background-image: url(http://voices.nationalgeographic.com/files/2014/08/NationalGeographic_1272918.jpg);
+	background-color: #222222;
 	height: 70vh;
 	width: $full-screen;
 	float: left;
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+	h1 {
+		position: absolute;
+    color: black;
+    font-family: 'Arimo';
+    font-size: 600%;
+    margin-left: 5vw;
+		font-weight: 800
+
+	}
+}
+#video {
+
+    height: 58vh;
+    width: 37vw;
+    padding-top: 0vh;
+    margin-top: 6vh;
+    margin-left: 51vw;
+		background-image:radial-gradient(rgba(24,24,24,0) 0%, black 80%)
 }
 #size1 {
 	margin-top: 0;
