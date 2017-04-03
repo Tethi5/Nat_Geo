@@ -20,7 +20,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		width: 16vw;
 		border-right: $border;
 		margin-top: $line;
-		font-weight: 900;
+		font-weight: 200;
 		font: 100% $font-stack;
 	}
 
@@ -31,13 +31,16 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		margin-top: $line;
 		padding-left: 15px;
 		border-right: $border;
+		font-weight: 100;
 	}
 
 	.right {
 		height: 4vh;
-		float: right;
-		width: 9vw;
-		margin-top: $line;
+    float: right;
+    width: 7vw;
+    margin-top: 18px;
+    font-weight: 100;
+    margin-right: 25px;
 	}
 
 	span {
@@ -47,7 +50,11 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 
 	.left {
 		float: left;
+		font-weight: 100;
 	}
+}
+#realtive {
+	position: relative;
 }
 .color {
 	color: #FBD42C;
@@ -57,9 +64,10 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 }
 .bar2 {
 	width: $full-screen;
-	height: 13vh;
+	height: 12vh;
 	background-color: $secondary-color;
 	padding-right: 0;
+
 
 	div {
 		float: left;
@@ -107,7 +115,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	}
 }
 .header {
-	height:66vh;
+	height:70vh;
 	width: $full-screen;
 	background-image: url(http://hdwallpaper20.com/wp-content/uploads/2016/10/national-geographic-wallpaper-free-Download4.jpg);
 	float:left;
@@ -182,8 +190,8 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
     font-size: 130%;
 }
 .filler {
-	height: 2vh;
-	background-color: black;
+	height: 3vh;
+	background-color: white;
 	width: $full-screen;
 	float: left;
 	position: relative;
@@ -191,7 +199,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 }
 .wrapper {
 	background-color: #222222;
-	height: 70vh;
+	height: 80vh;
 	width: $full-screen;
 	float: left;
 	position: relative;
@@ -207,20 +215,40 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		position: absolute;
     color: black;
     font-family: 'Arimo';
-    font-size: 600%;
+    font-size: 400%;
     margin-left: 5vw;
 		font-weight: 800
 
 	}
 }
-#video {
+#article1 {
+	height: 45vh;
+    width: 35vw;
+    background-color: black;
+    float: left;
+    margin-top: 0vh;
+    margin-left: 5vw;
+		background-image: url(http://news.nationalgeographic.com/content/dam/news/photos/000/743/74369.adapt.1190.1.jpg);
+    background-size: cover;
+		font-size: 160%;
+		padding-left: 2vw;
 
+}
+
+#article1:hover {
+	opacity: .7;
+	visibility: visible;
+}
+
+#article2 {
     height: 58vh;
     width: 37vw;
     padding-top: 0vh;
-    margin-top: 6vh;
-    margin-left: 51vw;
-		background-image:radial-gradient(rgba(24,24,24,0) 0%, black 80%)
+    margin-top: -22vh;
+    margin-left: 53vw;
+		background-image: url(http://news.nationalgeographic.com/content/dam/news/2017/02/03/einstein-violin/01-einstein-violin-genius.adapt.1190.1.jpg);
+		background-size: cover;
+
 }
 #size1 {
 	margin-top: 0;
@@ -261,4 +289,80 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		float: right;
 		width: 40vw;
 	}
+}
+.day2 {
+	height: 3vh;
+    width: 14vw;
+    margin-left: 53vw;
+    border-right: solid white;
+    border-left: solid white;
+    font-size: 102%;
+    padding-left: 18px;
+    color: white;
+		font-family: $font-stack1;
+		border-width: 1px;
+}
+.miniHead {
+	height: 4vh;
+    width: 40vw;
+    margin-left: 52vw;
+    font-size: 180%;
+    padding-left: 1vw;
+    color: white;
+		font-family: $font-stack;
+}
+.miniHead1 {
+	height: 4vh;
+    width: 35vw;
+		font-size: 180%;
+    padding-left: 5vw;
+    color: white;
+		font-family: $font-stack;
+}
+.day1 {
+	border-right: solid white;
+	border-left: solid white;
+	font-size: 102%;
+	padding-left: 18px;
+	color: white;
+	font-family: $font-stack1;
+	height: 3vh;
+  width: 14vw;
+	margin-left: 5vw;
+  margin-top: 20vh;
+	border-width: 1px;
+}
+
+.mainPic {
+	height:100vh;
+	width: 100vw;
+	background-image: url(http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDtgUQxd9Ej4ieEpffJwVlo7FVSQLOvYHCfl99tLW_KQanaP6QzSEMZS3yiU71HFWsXfuXgA04XpachTB0Ix0NCfL7pUZNlyywVI9-pTraWU0ZxTq_N92z5uAyVKOgFJc0UL2ypp8j7jKGIju4mclTaRcp8bhxCRqunp6htIBt26/);
+	float: left;
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.photoDay {
+    font-size: 400%;
+
+		font-weight: 10;
+    color: white;
+    font-family: 'Montserrat';
+    width: 100vw;
+    margin-left: 3vw;
+		height: 12vh;
+		border-left: solid white;
+		border-width: 2px;
+		padding-left: 4vw;
+		padding-top: 5vh;
+ }
+
+.topStories {
+	height: 80vh;
+	width: $full-screen;
+	background-color: black;
+	float: left;
 }
