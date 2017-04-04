@@ -522,7 +522,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		height: 45vh;
 		width: 30vw;
 		background-color:#222222;
-		opacity: .3;
+		opacity: .6;
 	}
 	#box2{
 
@@ -557,15 +557,22 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	}
 
 	#lefty {
-		width: 40vw;
+		width: 45vw;
     float: left;
-    margin-left: 8vw;
+    margin-left: 5vw;
     margin-top: 10vh;
-    height: 20vh;
+    height: 15vh;
     border-left: solid black;
     border-width: 1px;
-    font-size: 200%;
+    font-size: 188%;
     padding-left: 2vw;
+		button {
+			height: 6vh;
+			width: 10vw;
+			background-color: black;
+			color: white;
+			font-size: 50%;
+		}
 	}
 
 	#righty {
@@ -576,4 +583,10 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
     border-left: solid black;
     border-width: 1px;
 	}
+}
+.email {
+	height: 6vh;
+    width: 30vw;
+    margin-left: 0pc;
+    margin-top: 3vh;
 }
