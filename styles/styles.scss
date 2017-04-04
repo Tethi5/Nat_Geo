@@ -36,11 +36,11 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 
 	.right {
 		height: 4vh;
-    float: right;
-    width: 7vw;
-    margin-top: $line;
-    font-weight: 100;
-    margin-right: 25px;
+		float: right;
+		width: 7vw;
+		margin-top: $line;
+		font-weight: 100;
+		margin-right: 25px;
 	}
 
 	span {
@@ -53,21 +53,23 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		font-weight: 100;
 	}
 }
+
 #realtive {
 	position: relative;
 }
+
 .color {
 	color: #FBD42C;
 	font-size: 80%;
 	font-family: 'Arimo';
 	font-weight: bold;
 }
+
 .bar2 {
 	width: $full-screen;
 	height: 12vh;
 	background-color: $secondary-color;
 	padding-right: 0;
-
 
 	div {
 		float: left;
@@ -96,7 +98,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		width: 9vw;
 		background-color: white;
 		border: none;
-		float:right;
+		float: right;
 
 		#telli {
 			background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png");
@@ -105,8 +107,9 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 			width: 30px;
 			margin-top: 20px;
 		}
+
 		#ham {
-			background-image: url(https://rsna2016.rsna.org/images/hamburger-stale.png);
+			background-image: url("https://rsna2016.rsna.org/images/hamburger-stale.png");
 			background-size: 35px 35px;
 			background-repeat: no-repeat;
 			width: 35px;
@@ -114,46 +117,49 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		}
 	}
 }
+
 .header {
-	height:100vh;
+	height: 100vh;
 	width: $full-screen;
-	background-image: url(http://news.nationalgeographic.com/content/dam/news/2017/04/02/genius_camera/01_genius_camera.adapt.1900.1.jpg);
-	float:left;
-	vertical-align:bottom;
+	background-image: url("http://news.nationalgeographic.com/content/dam/news/2017/04/02/genius_camera/01_genius_camera.adapt.1900.1.jpg");
+	float: left;
+	vertical-align: bottom;
 	color: #F7F6F4;
-	position:relative;
+	position: relative;
 	background-size: cover;
 	font-family: 'Bitter', serif;
 	padding-top: 60vh;
 }
+
 #label {
-	bottom: 0px;
-	    padding-left: 1vw;
-	    padding-right: 1vw;
-	    margin-left: 3vw;
-	    padding-top: 0px;
-	    font-size: 120%;
-	    color: white;
-	    font-family: 'Bitter';
-	    border-right: solid white;
-	    border-left: solid white;
-	    border-width: 1px;
-	    user-select: none;
+	bottom: 0;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	margin-left: 3vw;
+	padding-top: 0;
+	font-size: 120%;
+	color: white;
+	font-family: 'Bitter';
+	border-right: solid white;
+	border-left: solid white;
+	border-width: 1px;
+	user-select: none;
 }
+
 #title1 {
 	font-size: 300%;
-		padding-top: 1vh;
-		padding-left: 3vw;
+	padding-top: 1vh;
+	padding-left: 3vw;
 }
 
 .filler {
 	height: 7vh;
-	background-color: white;
+	background-color: black;
 	width: $full-screen;
 	float: left;
 	position: relative;
-
 }
+
 .wrapper {
 	background-color: #222222;
 	height: 80vh;
@@ -163,50 +169,48 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	h1 {
 		position: absolute;
-    color: black;
-    font-family: 'Arimo';
-    font-size: 400%;
-    margin-left: 5vw;
-		font-weight: 800
-
+		color: black;
+		font-family: 'Arimo';
+		font-size: 400%;
+		margin-left: 5vw;
+		font-weight: 800;
 	}
 }
+
 #article1 {
 	height: 45vh;
-    width: 35vw;
-    background-color: black;
-    float: left;
-    margin-top: 0vh;
-    margin-left: 5vw;
-		background-image: url(http://news.nationalgeographic.com/content/dam/news/photos/000/743/74369.adapt.1190.1.jpg);
-    background-size: cover;
-		font-size: 160%;
-		padding-left: 2vw;
-
+	width: 35vw;
+	background-color: black;
+	float: left;
+	margin-top: 0;
+	margin-left: 5vw;
+	background-image: url("http://news.nationalgeographic.com/content/dam/news/photos/000/743/74369.adapt.1190.1.jpg");
+	background-size: cover;
+	font-size: 160%;
+	padding-left: 2vw;
 }
 
 #article1:hover {
-	opacity: .7;
+	opacity: 0.7;
 	visibility: visible;
 }
 
 #article2 {
-    height: 58vh;
-    width: 37vw;
-    padding-top: 0vh;
-    margin-top: -22vh;
-    margin-left: 53vw;
-		background-image: url(http://news.nationalgeographic.com/content/dam/news/2017/02/03/einstein-violin/01-einstein-violin-genius.adapt.1190.1.jpg);
-		background-size: cover;
-
+	height: 58vh;
+	width: 37vw;
+	padding-top: 0;
+	margin-top: -22vh;
+	margin-left: 53vw;
+	background-image: url("http://news.nationalgeographic.com/content/dam/news/2017/02/03/einstein-violin/01-einstein-violin-genius.adapt.1190.1.jpg");
+	background-size: cover;
 }
+
 #size1 {
 	margin-top: 0;
 	padding-right: 0;
@@ -247,35 +251,39 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		width: 40vw;
 	}
 }
+
 .day2 {
 	height: 3vh;
-    width: 14vw;
-    margin-left: 53vw;
-    border-right: solid white;
-    border-left: solid white;
-    font-size: 102%;
-    padding-left: 18px;
-    color: white;
-		font-family: $font-stack1;
-		border-width: 1px;
+	width: 14vw;
+	margin-left: 53vw;
+	border-right: solid white;
+	border-left: solid white;
+	font-size: 102%;
+	padding-left: 18px;
+	color: white;
+	font-family: $font-stack1;
+	border-width: 1px;
 }
+
 .miniHead {
 	height: 4vh;
-    width: 40vw;
-    margin-left: 52vw;
-    font-size: 180%;
-    padding-left: 1vw;
-    color: white;
-		font-family: $font-stack;
+	width: 40vw;
+	margin-left: 52vw;
+	font-size: 180%;
+	padding-left: 1vw;
+	color: white;
+	font-family: $font-stack;
 }
+
 .miniHead1 {
 	height: 4vh;
-    width: 35vw;
-		font-size: 180%;
-    padding-left: 5vw;
-    color: white;
-		font-family: $font-stack;
+	width: 35vw;
+	font-size: 180%;
+	padding-left: 5vw;
+	color: white;
+	font-family: $font-stack;
 }
+
 .day1 {
 	border-right: solid white;
 	border-left: solid white;
@@ -284,38 +292,37 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	color: white;
 	font-family: $font-stack1;
 	height: 3vh;
-  width: 14vw;
+	width: 14vw;
 	margin-left: 5vw;
-  margin-top: 20vh;
+	margin-top: 20vh;
 	border-width: 1px;
 }
 
 .mainPic {
-	height:100vh;
+	height: 100vh;
 	width: 100vw;
-	background-image: url(http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDtgUQxd9Ej4ieEpffJwVlo7FVSQLOvYHCfl99tLW_KQanaP6QzSEMZS3yiU71HFWsXfuXgA04XpachTB0Ix0NCfL7pUZNlyywVI9-pTraWU0ZxTq_N92z5uAyVKOgFJc0UL2ypp8j7jKGIju4mclTaRcp8bhxCRqunp6htIBt26/);
+	background-image: url("http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDtgUQxd9Ej4ieEpffJwVlo7FVSQLOvYHCfl99tLW_KQanaP6QzSEMZS3yiU71HFWsXfuXgA04XpachTB0Ix0NCfL7pUZNlyywVI9-pTraWU0ZxTq_N92z5uAyVKOgFJc0UL2ypp8j7jKGIju4mclTaRcp8bhxCRqunp6htIBt26/");
 	float: left;
 	background-size: cover;
 	background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-.photoDay {
-    font-size: 400%;
 
-		font-weight: 10;
-    color: white;
-    font-family: 'Montserrat';
-    width: 100vw;
-    margin-left: 8vw;
-		height: 12vh;
-		border-left: solid white;
-		border-width: 2px;
-		padding-left: 4vw;
-		padding-top: 5vh;
- }
+.photoDay {
+	font-size: 400%;
+	font-weight: 10;
+	color: white;
+	font-family: 'Montserrat';
+	width: 100vw;
+	margin-left: 8vw;
+	height: 12vh;
+	border-left: solid white;
+	border-width: 2px;
+	padding-left: 4vw;
+	padding-top: 5vh;
+}
 
 .topStories {
 	height: 108vh;
@@ -323,135 +330,208 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	background-color: black;
 	float: left;
 }
+
 .topTitle {
-    float: left;
-    height: 16vh;
-    width: 60vw;
-    color: white;
-    font-size: 408%;
-    border-left: solid white;
-    margin-left: 8vw;
-    padding-left: 7vw;
-    padding-top: 5vh;
-    margin-bottom: 5vh;
+	float: left;
+	height: 16vh;
+	width: 60vw;
+	color: white;
+	font-size: 408%;
+	border-left: solid white;
+	margin-left: 8vw;
+	padding-left: 7vw;
+	padding-top: 5vh;
+	margin-bottom: 5vh;
 }
+
 .column {
 	height: 80vh;
 	float: right;
 	width: 18vw;
 	margin-right: 5vw;
+
 	ul {
 		font-family: $font-stack1;
 		font-weight: 400;
 		height: 20vh;
-		width:18vw;
+		width: 18vw;
 		color: white;
 		text-align: center;
 		padding-top: 6vh;
 		padding-left: 1vw;
-		opacity: .5;
+		opacity: 0.5;
 	}
+
 	ul:hover {
 		opacity: 1;
-
 	}
 }
+
 #first {
-	background-image: url(http://ngm.nationalgeographic.com/2011/12/tigers/img/14-mother-rests-with-cub_1600.jpg);
+	background-image: url("http://ngm.nationalgeographic.com/2011/12/tigers/img/14-mother-rests-with-cub_1600.jpg");
 	background-size: cover;
 }
+
 #second {
-	background-image: url(http://pmdvod.nationalgeographic.com/NG_Video/500/643/170331-badger-burying-calf-carcass-vin_ds1702001-110_640x360_911064131569.jpg);
+	background-image: url("http://pmdvod.nationalgeographic.com/NG_Video/500/643/170331-badger-burying-calf-carcass-vin_ds1702001-110_640x360_911064131569.jpg");
 	background-size: cover;
 }
+
 #third {
-	background-image: url(http://ocean.nationalgeographic.com/u/TvyamNb-BivtNwpvn7Sct0VFDulyAfA9wBcU0gVHVnqC5ghvXfvStoqUtoGJeihxsbLUAFwyunZ9yshcWos/);
+	background-image: url("http://ocean.nationalgeographic.com/u/TvyamNb-BivtNwpvn7Sct0VFDulyAfA9wBcU0gVHVnqC5ghvXfvStoqUtoGJeihxsbLUAFwyunZ9yshcWos/");
 	background-size: cover;
 }
+
 #fourth {
-	background-image: url(http://phenomena.nationalgeographic.com/files/2013/08/Salmonella.jpg);
+	background-image: url("http://phenomena.nationalgeographic.com/files/2013/08/Salmonella.jpg");
 	background-size: cover;
 }
+
 #desc {
 	background-color: lightgrey;
 	float: left;
-    height: 25vh;
-    width: 62vw;
-    margin-left: 15vw;
-		color: white;
-		font-size: 200%;
-		padding-right: 5vw;
-		padding-top: 7vh;
-		p {
-			font-size: 60%;
-		}
+	height: 25vh;
+	width: 62vw;
+	margin-left: 15vw;
+	color: white;
+	font-size: 200%;
+	padding-right: 5vw;
+	padding-top: 7vh;
+
+	p {
+		font-size: 60%;
+	}
 }
+
 #play {
 	height: 75vh;
-    width: 60vw;
-    border: solid white;
-    margin-top: 25vh;
-    margin-left: 12vw;
+	width: 60vw;
+	border: solid white;
+	margin-top: 25vh;
+	margin-left: 12vw;
 }
+
 #news {
-	height: 142vh;
+	height: 150vh;
 	width: $full-screen;
 	float: left;
 	background-color: #222222;
 }
+
 .contain {
+	span {
+		font-size: 200%;
+    color: white;
+    font-family: 'Bitter';
+    font-weight: 500;
+	}
 	ul {
 		height: 23vh;
 		width: 32vw;
-		border-top: solid white;
 		margin-left: 5vw;
-		background-color: black;
+
+		border-bottom: solid white;
+		border-width: 1px;
 	}
-		#first1 {
-			margin-top: 0vh;
-	    height: 60vh;
-	    float: right;
-	    width: 50vw;
-	    margin-right: 8vw;
-			background-color: blue;
-			margin-bottom: 5vh;
+
+	#first1 {
+		margin-top: 0;
+		height: 60vh;
+		float: right;
+		width: 50vw;
+		margin-right: 8vw;
+		background-image: url("http://www.nationalgeographic.com/content/dam/travel/2017-digital/mud-skyscrapers-shibam-yemen/aerial-shibam-yemen.adapt.1190.1.jpg");
+		background-size: cover;
+		margin-bottom: 5vh;
 	}
+
 	#second1 {
-		margin-top: 0vh;
-    height: 50vh;
-    float: right;
-    width: 50vw;
-    margin-right: 8vw;
-		background-color: red;
+		margin-top: 0;
+		height: 50vh;
+		float: right;
+		width: 50vw;
+		margin-right: 8vw;
+		background-image: url("http://news.nationalgeographic.com/content/dam/news/2015/06/12/palaupristineseas/01palaupristineseas.adapt.1190.1.jpg");
+		background-size: cover;
 	}
+
 	#third1 {
 		margin-top: 25vh;
-    height: 40vh;
+		height: 40vh;
+		background-image: url(http://voices.nationalgeographic.com/files/2011/11/python.jpg);
+		background-size: cover;
+	}
+
+	#fourth1 {
+		color: white;
+		font-family: 'Arimo';
+		font-size: 150%;
+		padding-left: 5vw;
+		padding-top: 7vh;
+		font-weight: 800;
+	}
+
+	#fifth1 {
+		color: white;
+		font-family: 'Arimo';
+		font-size: 150%;
+		padding-left: 5vw;
+		padding-top: 7vh;
+		font-weight: 800;
+	}
+	#sixth1 {
+		color: white;
+    font-family: 'Arimo';
+    font-size: 150%;
+    padding-left: 5vw;
+    padding-top: 7vh;
+    font-weight: 800;
+		height: 28vh;
 	}
 }
-.top5 {
-	height: 15vh;
-width: 32vw;
-border-left: solid  #FBD42C;
-border-left-width: 1px;
-float: left;
-margin-left: 5vw;
-margin-right: 5vw;
-font-size: 400%;
-color: white;
-margin-top: 10vh;
-padding-left: 5vw;
-font-family: 'Montserrat';
-}
+	.top5 {
+		height: 15vh;
+		width: 32vw;
+		border-left: solid #FBD42C;
+		border-left-width: 1px;
+		float: left;
+		margin-left: 5vw;
+		margin-right: 5vw;
+		font-size: 400%;
+		color: white;
+		margin-top: 10vh;
+		padding-left: 5vw;
+		font-family: 'Montserrat';
+	}
 
-.newest {
-	font-size: 400%;
-	border-left: solid  #FBD42C;
-	border-left-width: 1px;
-	height: 15vh;
-	width: 50vw;
-	padding-left: 5vw;
-	float: left;
-	color: white;
-	margin-top: 10vh;
-}
+	.newest {
+		font-size: 400%;
+		border-left: solid #FBD42C;
+		border-left-width: 1px;
+		height: 15vh;
+		width: 50vw;
+		padding-left: 5vw;
+		float: left;
+		color: white;
+		margin-top: 10vh;
+	}
+	.wrapper3 {
+		background-image: url(https://s-media-cache-ak0.pinimg.com/originals/81/61/38/816138fb8a5d251cd16a9407786a0d1b.jpg);
+		background-size: cover;
+		height: 90vh;
+		width: $full-screen;
+		float: left;
+		position: relative;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		span {
+			height: 20vh;
+			width: 25vw;
+			background-color: lightgrey;
+			opacity: .4;
+		}
+	}
