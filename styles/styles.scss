@@ -140,8 +140,8 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	font-size: 120%;
 	color: white;
 	font-family: 'Bitter';
-	border-right: solid white;
-	border-left: solid white;
+	border-right: solid  #FBD42C;
+	border-left: solid #FBD42C;
 	border-width: 1px;
 	user-select: none;
 }
@@ -229,35 +229,14 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	margin-top: -9px;
 }
 
-.footer {
-	height: 50vh;
-	width: 100vw;
-	background-color: lightgrey;
 
-	div {
-		height: 40vh;
-		width: 40vw;
-		background-color: darkgrey;
-		border-right: $border;
-	}
-
-	#lefty {
-		width: 40vw;
-		float: left;
-	}
-
-	#righty {
-		float: right;
-		width: 40vw;
-	}
-}
 
 .day2 {
 	height: 3vh;
 	width: 14vw;
 	margin-left: 53vw;
-	border-right: solid white;
-	border-left: solid white;
+	border-right: solid  #FBD42C;
+	border-left: solid  #FBD42C;
 	font-size: 102%;
 	padding-left: 18px;
 	color: white;
@@ -285,8 +264,8 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 }
 
 .day1 {
-	border-right: solid white;
-	border-left: solid white;
+	border-right: solid  #FBD42C;
+	border-left: solid #FBD42C;
 	font-size: 102%;
 	padding-left: 18px;
 	color: white;
@@ -318,7 +297,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	width: 100vw;
 	margin-left: 8vw;
 	height: 12vh;
-	border-left: solid white;
+	border-left: solid  #FBD42C;
 	border-width: 2px;
 	padding-left: 4vw;
 	padding-top: 5vh;
@@ -333,15 +312,16 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 
 .topTitle {
 	float: left;
-	height: 16vh;
-	width: 60vw;
-	color: white;
-	font-size: 408%;
-	border-left: solid white;
-	margin-left: 8vw;
-	padding-left: 7vw;
-	padding-top: 5vh;
-	margin-bottom: 5vh;
+    height: 16vh;
+    width: 60vw;
+    color: white;
+    font-size: 408%;
+    border-left: solid #FBD42C;
+    border-width: 1px;
+    margin-left: 8vw;
+    padding-left: 4vw;
+    padding-top: 5vh;
+    margin-bottom: 3vh;
 }
 
 .column {
@@ -528,10 +508,72 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		span {
+		div {
 			height: 20vh;
 			width: 25vw;
-			background-color: lightgrey;
-			opacity: .4;
+
+		}
+		h {
+			height: 10vw;
 		}
 	}
+	#box1 {
+		float: left;
+		height: 45vh;
+		width: 30vw;
+		background-color:#222222;
+		opacity: .3;
+	}
+	#box2{
+
+    margin-top: 50vh;
+    float: right;
+    height: 45vh;
+		width: 30vw;
+		background-color: #222222;
+		opacity: .6;
+	}
+#box3 {
+	margin-top: 40vh;
+    margin-left: 35vw;
+    height: 7vh;
+    width: 30vw;
+    font-size: 340%;
+    padding-left: 5vw;
+    border-left: solid #FBD42C;
+    border-width: 2px;
+    color: white;
+
+}
+.footer {
+	height: 50vh;
+	width: 100vw;
+	background-color: lightgrey;
+	float: left;
+
+	div {
+		height: 40vh;
+		width: 40vw;
+	}
+
+	#lefty {
+		width: 40vw;
+    float: left;
+    margin-left: 8vw;
+    margin-top: 10vh;
+    height: 20vh;
+    border-left: solid black;
+    border-width: 1px;
+    font-size: 200%;
+    padding-left: 2vw;
+	}
+
+	#righty {
+		float: right;
+    width: 40vw;
+    margin-top: 10vh;
+    height: 17vh;
+    border-left: solid black;
+    border-width: 1px;
+	}
+}
