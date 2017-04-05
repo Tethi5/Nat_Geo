@@ -4,11 +4,18 @@ angular.module('myApp', ['ui.router'])
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: './views/home.html'
+                templateUrl: './views/home.html',
             })
             .state('latest', {
                 url: '/latest',
                 templateUrl: './views/latest_stories.html'
             })
+            .state('photo', {
+              url: '/photo',
+              templateUrl: './views/photo.html'
+            })
 
-    })
+        $urlRouterProvider
+        .otherwise('/')
+
+    });
