@@ -2,7 +2,7 @@ $primary-color: black;
 $secondary-color: white;
 $full-screen: 100vw;
 $border: solid thin grey;
-$line: 12px;
+$line: 16px;
 $font-stack: 'Arimo', serif, 100;
 $font-stack1: 'Didact Gothic', sans-serif, grey;
 
@@ -12,8 +12,8 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	font: 100% $font-stack;
 	background-color: $primary-color;
 	width: $full-screen;
-	height: 7vh;
-
+	height: 8vh;
+  letter-spacing: .1em;
 	div {
 		height: 4vh;
 		float: left;
@@ -45,7 +45,10 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 
 	span {
 		float: right;
-		padding-right: 20px;
+		padding-right: 15px;
+		letter-spacing: .1em;
+		font-family: 'Arimo';
+		font-size: 85%;
 	}
 
 	.left {
@@ -60,6 +63,13 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 
 .color {
 	color: #FBD42C;
+	font-size: 80%;
+	font-family: 'Arimo';
+	font-weight: bold;
+	float: left;
+}
+.color1 {
+	color:grey;
 	font-size: 80%;
 	font-family: 'Arimo';
 	font-weight: bold;
@@ -86,8 +96,9 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		color: darkgrey;
 		font-size: 105%;
 	}
-	.link {
+	.link:hover {
 		cursor: pointer;
+		color: black;
 	}
 }
 
@@ -120,6 +131,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		}
 	}
 }
+/*INDEX.HTML ENDS HERE*/////////////////////////////
 
 .header {
 	height: 100vh;
@@ -136,28 +148,29 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 
 #label {
 	bottom: 0;
-	padding-left: 1vw;
+	padding-left: 0vw;
 	padding-right: 1vw;
 	margin-left: 3vw;
-	padding-top: 0;
+	padding-top: 24vh;
 	font-size: 120%;
 	color: white;
 	font-family: 'Bitter';
-	border-right: solid  #FBD42C;
-	border-left: solid #FBD42C;
+	// border-right: solid  #FBD42C;
+	// border-left: solid #FBD42C;
 	border-width: 1px;
 	user-select: none;
+	letter-spacing: .1em
 }
 
 #title1 {
 	font-size: 300%;
-	padding-top: 1vh;
+	padding-top: -1vh;
 	padding-left: 3vw;
 }
 
 .filler {
 	height: 7vh;
-	background-color: black;
+	background-color: white;
 	width: $full-screen;
 	float: left;
 	position: relative;
@@ -169,12 +182,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	width: $full-screen;
 	float: left;
 	position: relative;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+
 
 	h1 {
 		position: absolute;
@@ -183,6 +191,13 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		font-size: 400%;
 		margin-left: 5vw;
 		font-weight: 800;
+		letter-spacing: .2em;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 }
 
@@ -256,15 +271,17 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	padding-left: 1vw;
 	color: white;
 	font-family: $font-stack;
+	font-weight: 700;
 }
 
 .miniHead1 {
 	height: 4vh;
 	width: 35vw;
-	font-size: 180%;
+	font-size: 160%;
 	padding-left: 5vw;
 	color: white;
 	font-family: $font-stack;
+	font-weight: 700;
 }
 
 .day1 {
@@ -282,9 +299,9 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 }
 
 .mainPic {
-	height: 100vh;
+	height: 110vh;
 	width: 100vw;
-	background-image: url("http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDtgUQxd9Ej4ieEpffJwVlo7FVSQLOvYHCfl99tLW_KQanaP6QzSEMZS3yiU71HFWsXfuXgA04XpachTB0Ix0NCfL7pUZNlyywVI9-pTraWU0ZxTq_N92z5uAyVKOgFJc0UL2ypp8j7jKGIju4mclTaRcp8bhxCRqunp6htIBt26/");
+	background-image: url("http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDtgWr5l_X5wE0gOV1MUb2fQ0IEWA_6cY9pUVPCA0297pke5t_xU4wdEj6Ob9eyyoPOsUv9R4rqlASGCXtnuSpJJfaaD5TsFWiD7sz4rIrraLLdlC9uXZXN8XYRNKH76UCDGl2MRn68iWDiWH3JXcb-MDEF0xWNqOT25-CMe6DZnnfk/");
 	float: left;
 	background-size: cover;
 	background-attachment: fixed;
@@ -305,6 +322,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	border-width: 2px;
 	padding-left: 4vw;
 	padding-top: 5vh;
+	letter-spacing: .1em;
 }
 
 .topStories {
@@ -326,6 +344,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
     padding-left: 4vw;
     padding-top: 5vh;
     margin-bottom: 3vh;
+		letter-spacing: .1em;
 }
 
 .column {
@@ -481,11 +500,12 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		float: left;
 		margin-left: 5vw;
 		margin-right: 5vw;
-		font-size: 400%;
+		font-size: 345%;
 		color: white;
 		margin-top: 10vh;
 		padding-left: 5vw;
 		font-family: 'Montserrat';
+		letter-spacing: .1em;
 	}
 
 	.newest {
@@ -498,6 +518,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		float: left;
 		color: white;
 		margin-top: 10vh;
+		letter-spacing: .1em;
 	}
 	.wrapper3 {
 		background-image: url(https://s-media-cache-ak0.pinimg.com/originals/81/61/38/816138fb8a5d251cd16a9407786a0d1b.jpg);
@@ -547,17 +568,52 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
     border-left: solid #FBD42C;
     border-width: 2px;
     color: white;
+		letter-spacing: .1em;
 
 }
+
+
+/*FOOTER*/////////////////////////////
+
 .footer {
-	height: 50vh;
+	height: 55vh;
 	width: 100vw;
-	background-color: lightgrey;
+	background-color: #F2F2F2;
 	float: left;
 
-	div {
-		height: 40vh;
-		width: 40vw;
+	input {
+		border-style: none;
+    height: 4vh;
+    margin-top: 12px;
+    margin-left: 22px;
+    font-size:60%;
+		font-family: 'Arimo';
+		font-weight: 700;
+		letter-spacing: .1em;
+	}
+	button {
+		background-color: black;
+    font-size: 70%;
+    color: white;
+    border-style: none;
+    padding-left: 60px;
+    font-family: 'Arimo';
+		margin-top:2vh;
+
+	}
+	p {
+		margin-top: 2vh;
+    float: left;
+    width: 51vw;
+    margin-left: 5vw;
+    font-size: 85%;
+    color: grey;
+	}
+	#rebel {
+		margin-top: 5vh;
+    margin-bottom: -2vh;
+
+	}
 	}
 
 	#lefty {
@@ -568,25 +624,50 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
     height: 15vh;
     border-left: solid black;
     border-width: 1px;
-    font-size: 188%;
+    font-size: 165%;
     padding-left: 2vw;
-		button {
-			height: 6vh;
-			width: 10vw;
-			background-color: black;
-			color: white;
-			font-size: 50%;
-		}
-	}
-
-	#righty {
-		float: right;
-    width: 40vw;
+		height: 18vh;
+		font-family: 'Arimo';
+		font-weight: lighter;
+		letter-spacing: .1em;
+}
+#righty {
+	float: right;
+    width: 35vw;
     margin-top: 10vh;
-    height: 17vh;
+    height: 15vh;
     border-left: solid black;
     border-width: 1px;
+    font-size: 165%;
+    letter-spacing: .1em;
+    padding-left: 2vw;
+		font-family: 'Arimo';
+
+	.icons {
+		height: 10vh;
+		width: 15vw;
+		span {
+			height: 6vh;
+
+    width:35px;
+    float: left;
+    margin-right: 21px;
+    margin-top: 4vh;
+		}
 	}
+}
+#firstIcon {
+	background-image: url(http://simpleicon.com/wp-content/uploads/facebook.png);
+	background-size: 35px 31px;
+	background-repeat: no-repeat;
+}
+#secondIcon {
+	background-image: url(http://vet.osu.edu/vmc/sites/default/files/images/twitter-1024-black.png);
+	background-size: cover;
+}
+#thirdIcon {
+	background-image: url(https://maxcdn.icons8.com/windows10/PNG/512/Logos/instagram_new-512.png);
+	background-size: cover;
 }
 .email {
 	height: 6vh;
@@ -594,6 +675,39 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
     margin-left: 0pc;
     margin-top: 3vh;
 }
+button {
+
+}
+.holdingCell {
+	height: 8vh;
+	width: 50vw;
+	background-color: white;
+}
+.holdingButton {
+	background-color: black;
+	height: 8vh;
+	width: 15vw;
+	float: right;
+}
+.extraLinks {
+	height: 8vh;
+    width: 29vw;
+    float: right;
+    position: bottom;
+    margin-right: 6vw;
+    margin-top: -9vh;
+    font-color: grey;
+
+		span {
+		padding-right: 28px;
+    color: grey;
+    letter-spacing: .1em;
+    font-size: 90%;
+}
+
+}
+/*NEXT VIEW*///////////////////////
+
 .ad {
 	height: 100vh;
     width: 23vw;
@@ -729,4 +843,47 @@ letter-spacing: .2em;
 	height: 20vh;
 	background-color: #e4e4e4;
 	float: left;
+}
+/*NEXT VIEW *////////////////////////////////////
+.feed2 {
+	float: left;
+	height: 180vh;
+	width: 50vw;
+	margin-left: 16vw;
+	margin-top: 26vh;
+
+ .mainArt {
+	 height: 70vh;
+	 width: 47vw;
+	 background-size: cover;
+	 background-image: url(http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDtgWr5l_X5wE0gOV1MUb2fQ0IEWA_6cY9pUVPCA0297pke5t_xU4wdEj6Ob9eyyoPOsUv9R4rqlASGCXtnuSpJJfaaD5TsFWiD7sz4rIrraLLdlC9uXZXN8XYRNKH76UCDGl2MRn68iWDiWH3JXcb-MDEF0xWNqOT25-CMe6DZnnfk/);
+ }
+
+  .picInfo {
+		margin-top: 5vh;
+		height: 55vh;
+		width: 45vw;
+		border-left: solid black;
+		border-width: 1px;
+		padding-left: 2vw;
+	}
+	h5 {
+		color: grey;
+		letter-spacing: .1em;
+		font-size: 90%;
+
+	}
+	p {
+		font-size: 110%
+	}
+	span {
+		font-weight: 700;
+		font-size: 110%;
+		letter-spacing: .1em;
+	}
+	#btmMargin {
+		margin-top: 7vh;
+		color: grey;
+		font-size: 90%;
+	}
 }
