@@ -177,16 +177,17 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 }
 
 .wrapper {
-	background-color: #222222;
-	height: 80vh;
+	background-color: White;
+	height: 100vh;
 	width: $full-screen;
 	float: left;
 	position: relative;
+	text-align: center;
 
 
 	h1 {
 		position: absolute;
-		color: black;
+		color: grey;
 		font-family: 'Arimo';
 		font-size: 400%;
 		margin-left: 5vw;
@@ -202,16 +203,30 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 }
 
 #article1 {
-	height: 45vh;
-	width: 35vw;
-	background-color: black;
-	float: left;
-	margin-top: 0;
-	margin-left: 5vw;
-	background-image: url("http://news.nationalgeographic.com/content/dam/news/photos/000/743/74369.adapt.1190.1.jpg");
-	background-size: cover;
-	font-size: 160%;
-	padding-left: 2vw;
+
+    height: 60vh;
+    width: 45vw;
+    background-color: black;
+    float: left;
+    margin-top: 12vh;
+    margin-left: 6vw;
+    background-image: url(http://news.nationalgeographic.com/content/dam/news/photos/000/743/74369.adapt.1190.1.jpg);
+    background-size: cover;
+    font-size: 160%;
+    padding-left: 2vw;
+    position: absolute;
+}
+#articleShad {
+	position: relative;
+    height: 45vh;
+    width: 35vw;
+    background-color: black;
+    float: left;
+    margin-top: 3vh;
+    margin-left: 8vw;
+    background-size: cover;
+    font-size: 160%;
+    padding-left: 2vw;
 }
 
 #article1:hover {
@@ -279,7 +294,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	width: 35vw;
 	font-size: 160%;
 	padding-left: 5vw;
-	color: white;
+	color: black;
 	font-family: $font-stack;
 	font-weight: 700;
 }
@@ -289,7 +304,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	border-left: solid #FBD42C;
 	font-size: 102%;
 	padding-left: 18px;
-	color: white;
+	color: black;
 	font-family: $font-stack1;
 	height: 3vh;
 	width: 14vw;
@@ -301,28 +316,56 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 .mainPic {
 	height: 110vh;
 	width: 100vw;
-	background-image: url("http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDtgWr5l_X5wE0gOV1MUb2fQ0IEWA_6cY9pUVPCA0297pke5t_xU4wdEj6Ob9eyyoPOsUv9R4rqlASGCXtnuSpJJfaaD5TsFWiD7sz4rIrraLLdlC9uXZXN8XYRNKH76UCDGl2MRn68iWDiWH3JXcb-MDEF0xWNqOT25-CMe6DZnnfk/");
+	background-image: url("http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDq1QzZ7a5bArA5dfhlh3GCek5VloWA_ykmgKLzszkHbCzXICENQxuuTUCfB4YN3EULCJ7WQ4aOBPpQSpnJVQNW0oTNhFI8vWDCWFOfWRWgCeTwXNF5UjwM831psZ5qXJOQmZfuKf3HqjWVNgrdOffoBFrMmmYX98dSXtHB4nqQ/");
 	float: left;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
 
-.photoDay {
-	font-size: 400%;
-	font-weight: 10;
+}
+.seeAll {
 	color: white;
-	font-family: 'Montserrat';
+    float: right;
+    font-size: 109%;
+    margin-right: 6vw;
+    margin-top: 6vh;
+    letter-spacing: .2em;
+    font-weight: 500;
+		e {
+			color: #FBD42C;
+			font-size: 120%;
+		}
+}
+#wrapCase {
 	width: 100vw;
-	margin-left: 8vw;
-	height: 12vh;
-	border-left: solid  #FBD42C;
-	border-width: 2px;
-	padding-left: 4vw;
-	padding-top: 5vh;
-	letter-spacing: .1em;
+	height: 100vh;
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.5),transparent);
+	background: linear-gradient(to bottom, rgba(0,0,0,0.5),transparent);
+
+}
+.photoDay {
+	font-size: 370%;
+font-weight: 10;
+color: white;
+font-family: 'Didact Gothic', serif;
+width: 100vw;
+margin-left: 3vw;
+height: 12vh;
+border-left: solid white;
+border-width: 1px;
+padding-left: 3vw;
+padding-top: 3vh;
+letter-spacing: .2em;
+font-weight: lighter;
+/* opacity: .7; */
+
+}
+.mainPic:hover {
+	.photoDay {
+		visibility: hidden;
+	}
 }
 
 .topStories {
@@ -590,6 +633,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		font-family: 'Arimo';
 		font-weight: 700;
 		letter-spacing: .1em;
+		width: 30vw;
 	}
 	button {
 		background-color: black;
