@@ -14,6 +14,10 @@ angular.module('myApp', ['ui.router'])
               url: '/photo',
               templateUrl: './views/photo.html'
             })
+            .state('climate', {
+              url: '/climate',
+              templateUrl: './views/climate.html'
+            })
 
         $urlRouterProvider
         .otherwise('/')

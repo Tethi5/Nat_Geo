@@ -33,6 +33,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		padding-left: 15px;
 		border-right: $border;
 		font-weight: 100;
+		letter-spacing: .1em;
 	}
 
 	.right {
@@ -42,6 +43,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		margin-top: $line;
 		font-weight: 100;
 		margin-right: 25px;
+
 	}
 
 	span {
@@ -843,7 +845,7 @@ button {}
 	}
 }
 /*NEXT VIEW*/
-//////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .ad {
 	height: 100vh;
@@ -962,6 +964,8 @@ button {}
 		font-weight: 700;
 		padding-left: 6vw;
 		margin-top: 5vh;
+		text-decoration: underline;
+		text-decoration-color: #FBD42C;
 	}
 }
 
@@ -996,12 +1000,7 @@ button {}
 
 #miniLink2 {}
 
-.adFiller {
-	width: 100vw;
-	height: 20vh;
-	background-color: #e4e4e4;
-	float: left;
-}
+
 /*NEXT VIEW */
 ///////////////////////////////////
 
@@ -1010,7 +1009,7 @@ button {}
 	height: 180vh;
 	width: 50vw;
 	margin-left: 16vw;
-	margin-top: 26vh;
+	margin-top: 15vh;
 
 	.mainArt {
 		height: 70vh;
@@ -1038,7 +1037,7 @@ button {}
 		font-size: 110%;
 	}
 
-	span {
+	#starting {
 		font-weight: 700;
 		font-size: 110%;
 		letter-spacing: 0.1em;
@@ -1049,4 +1048,213 @@ button {}
 		color: grey;
 		font-size: 90%;
 	}
+	h1 {
+		font-weight: 700;
+font-size: 350%;
+margin-left: -3vw;
+margin-top: 0vh;
+margin-bottom: 3vh;
+	}
+}
+.commentBar {
+	height: 10vh;
+	width: 15vw;
+	border: solid black;
+	border-width: 1px;
+	float: left;
+	margin-top: 10vh;
+	font-family: 'Bitter' serif;
+	font-weight: 400;
+
+
+	#bubble {
+		height: 10vh;
+		width:5vw;
+		background-image: url(https://cdn0.iconfinder.com/data/icons/communication-technology/500/speech-bubble-512.png);
+		float: left;
+		background-size: cover;
+	}
+	#comment {
+		font-size: 140%;
+    margin-top: 16px;
+    float: left;
+	}
+}
+.adFiller {
+	width: 100vw;
+	height: 20vh;
+	background-color: #e4e4e4;
+	float: left;
+}
+.photoTitle {
+	float: left;
+	margin-top: 10vh;
+	margin-left: 10vw;
+	font-family: 'Arimo';
+	font-weight: 600;
+	letter-spacing: .1em;
+}
+.wrapDay {
+	float: left;
+	width: 84vw;
+	height: 70vh;
+
+	margin-top: 2vh;
+	margin-left: 10vw;
+
+div {
+	width: 25vw;
+	height: 65vh;
+	float: left;
+	margin-left: 2vw;
+	margin-top: 5vh;
+
+}
+}
+#firstBox {
+.janPic {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(http://www.nationalgeographic.com/content/dam/photography/rights-exempt/your-shot/best-pod-jan-01.adapt.1190.1.jpg);
+	height: 35vh;
+	width: 25vw
+}
+.hermitStry {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(http://news.nationalgeographic.com/content/dam/news/2017/04/04/book-talk-hermit/01-book-talk-hermit-north-pond.adapt.1190.1.jpg);
+	height: 35vh;
+	width: 25vw
+}
+h3 {
+	font-weight: 600;
+	font-family: 'Arimo';
+}
+p{
+	border-left: solid black;
+	border-width: 1px;
+	padding-left: 2vw;
+}
+}
+#secondBox {
+	.decPic {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(http://www.nationalgeographic.com/content/dam/photography/rights-exempt/your-shot/best-pod-dec-05.ngsversion.1483554705193.adapt.1900.1.jpg);
+		height: 35vh;
+		width: 25vw
+	}
+	.lionStry {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(http://photonaturalist.net/wp-content/uploads/2011/12/LastLions_18.jpeg);
+		height: 35vh;
+		width: 25vw
+	}
+	h3 {
+		font-weight: 600;
+		font-family: 'Arimo';
+	}
+	p{
+		border-left: solid black;
+		border-width: 1px;
+		padding-left: 2vw;
+	}
+}
+#thirdBox {
+	.bestPic {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(http://www.nationalgeographic.com/content/dam/photography/rights-exempt/your-shot/best-pod-2016-07b.ngsversion.1481034984962.adapt.885.1.jpg);
+		height: 35vh;
+		width: 25vw
+	}
+	.spiderStry {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(http://news.nationalgeographic.com/content/dam/news/2017/04/07/tree-crab/tree-crab-discovery-2.adapt.1190.1.jpg);
+		height: 35vh;
+		width: 25vw
+	}
+	h3 {
+		font-weight: 600;
+		font-family: 'Arimo';
+	}
+	p{
+		border-left: solid black;
+		border-width: 1px;
+		padding-left: 2vw;
+	}
+}
+/*NEXT VIEW*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#theBigg {
+	font-family: 'Arimo', serif;
+font-size: 450%;
+margin-top: 13vh;
+margin-bottom: 4vh;
+height: 12vh;
+width: 90vw;
+float: left;
+letter-spacing: .2em;
+margin-left: 10vw;
+font-weight: 100;
+}
+.bigPic {
+	background-image: url(http://news.nationalgeographic.com/content/dam/news/rights-exempt/your-shot/my-climate-action/7021381_Plastic_Waste.adapt.1190.1.jpg);
+	text-align: center;
+	height: 100vh;
+	width: $full-screen;
+	background-size: 100vw 110vh;
+	background-repeat: no-repeat;
+	float: left;
+	color: white;
+	h2 {
+		width: 46vw;
+    height: 15vh;
+    font-weight: 700;
+    font-family: 'Arimo';
+    margin-top: 35vh;
+    margin-left: 27vw;
+    margin-bottom: 1vh;
+    font-size: 288%;
+	}
+	p {
+		width: 31vw;
+font-family: 'Didact Gothic', serif;
+font-weight: 600;
+margin-left: 35vw;
+
+	}
+}
+.newFiller {
+	height: 2vh;
+	width: 100vw;
+	float: left;
+	background-color: #F2F2F2;
+}
+.seriesWrap {
+	height: 120vh;
+	width: $full-screen;
+	background-color: white;
+	float: left;
+}
+.containSeries {
+	margin-left: 10vw;
+	margin-right: 10vw;
+	height: 120vh;
+	width: 80vw;
+#newVid {
+	width: 51vw;
+height: 60vh;
+background-color: blue;
+margin-right: 2vw;
+float: left;
+}
+#scrollVid {
+	width: 25vw;
+    height: 70vh;
+    background-color: green;
+    float: right;
+
+}
 }
