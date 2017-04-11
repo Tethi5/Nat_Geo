@@ -398,7 +398,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 .mainPic {
 	height: 110vh;
 	width: 100vw;
-	background-image: url("http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDq1QzZ7a5bArA5dfhlh3GCek5VloWA_ykmgKLzszkHbCzXICENQxuuTUCfB4YN3EULCJ7WQ4aOBPpQSpnJVQNW0oTNhFI8vWDCWFOfWRWgCeTwXNF5UjwM831psZ5qXJOQmZfuKf3HqjWVNgrdOffoBFrMmmYX98dSXtHB4nqQ/");
+	background-image: url("http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDtgUxaRYU5ylUITtYLIzpeL284OUN0OXo37tYU-ZeqXu1Kvm_gE_zrXZHcfzAXXL8KoX83vjjdFpEyQ-NESmQo9opS8DW3-Fxf_mQMy4XKmv7kQwavce4JdM7_fwQ3LIkRCXQbSJrQk9peP-TYIRU_fbzVixbaVROIcZDOFDkKk/");
 	float: left;
 	background-size: cover;
 	background-attachment: fixed;
@@ -424,13 +424,13 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 
 #wrapCase {
 	width: 100vw;
-	height: 60vh;
+	height: 30vh;
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0.5),transparent);
 	background: linear-gradient(to bottom, rgba(0,0,0,0.5),transparent);
 }
 
 .photoDay {
-	font-size: 370%;
+	font-size: 425%;
 	font-weight: 10;
 	color: white;
 	font-family: 'Didact Gothic', serif;
@@ -444,6 +444,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	letter-spacing: 0.2em;
 	font-weight: lighter;
 	/* opacity: .7; */
+	height: 14vh;
 }
 
 .mainPic:hover {
@@ -542,99 +543,359 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 }
 
 #news {
-	height: 150vh;
+	height: 250vh;
 	width: $full-screen;
 	float: left;
 	background-color: #222222;
 }
-
-.contain {
-	span {
-		font-size: 200%;
-		color: white;
-		font-family: 'Bitter';
-		font-weight: 500;
-	}
+.contain5 {
+height: 100vh;
+width: 40vw;
+background-color: blue;
+}
+.skinny {
+	width: 37vw;
+    height: 200vh;
+    float: left;
+    margin-left: 5vw;
+    margin-top: 12vh;
+		h1 {
+			border-left: solid #FBD42C;
+    height: 15vh;
+    padding-left: 3vw;
+    font-size: 405%;
+    letter-spacing: .1em;
+    color: white;
+    font-family: 'Didact Gothic', serif;
+		margin-bottom: 0px;
+		border-width: 1px;
+		}
+}
+.containList {
+	background-color: black;
+	height: 197vh;
+	width: 37vw;
 
 	ul {
+		height: 25vh;
+		width: 33vw;
+		float: right;
+		padding-left: 0px;
+	}
+
+}
+#first1 {
+	height: 50vh;
+	width: 33vw;
+	float: right;
+	margin-top: 5vh;
+h5 {
+		border-left: solid white;
+	    border-right: solid white;
+	    border-width: 1px;
+	    font-size: 80%;
+	    font-family: 'Arimo';
+	    width: 145px;
+	    padding-left: 1vw;
+	    padding-right: 1vw;
+			color: white;
+			letter-spacing: .1em;
+	}
+h3 {
+	font-size: 200%;
+	color: white;
+	font-family: 'Arimo';
+	font-weight: 900;
+	margin-bottom: 2vh;
+
+}
+p {
+	float: right;
+	font-size: 600%;
+	color: $Nat-color;
+	margin-top: 20vh;
+	margin-bottom: 0px;
+}
+}
+#firstPic {
+height: 31vh;
+width: 33vw;
+background-image: url(http://www.nationalgeographic.com/content/dam/photography/PROOF/2017/march/transinistra/02_transinistria.ngsversion.1490675403325.adapt.1900.1.jpg);
+background-size: 422px 320px;
+background-repeat: no-repeat;
+float: right;
+}
+#second1 {
+	.covering {
 		height: 23vh;
-		width: 32vw;
-		margin-left: 5vw;
-		border-bottom: solid white;
-		border-width: 1px;
-	}
+    width: 20vw;
+    float: left;
+    border-bottom:1px solid grey;
+		border-top: 1px solid grey;
+    padding-left: 0px;
+    margin-left: 0;
 
-	#first1 {
-		margin-top: 0;
-		height: 60vh;
+	}
+	h5 {
+		border-left: solid white;
+	    border-right: solid white;
+	    border-width: 1px;
+	    font-size: 80%;
+	    font-family: 'Arimo';
+	    width: 145px;
+	    padding-left: 1vw;
+	    padding-right: 1vw;
+			color: white;
+			letter-spacing: .1em;
+			margin-top: 3vh;
+	}
+	h3 {
+		font-size: 130%;
+		font-family: 'Arimo';
+		font-weight: 700;
+		margin-bottom: 2vh;
+		color: white;
+		width: 19vw;
+	}
+	p {
 		float: right;
-		width: 50vw;
-		margin-right: 8vw;
-		background-image: url("http://www.nationalgeographic.com/content/dam/travel/2017-digital/mud-skyscrapers-shibam-yemen/aerial-shibam-yemen.adapt.1190.1.jpg");
-		background-size: cover;
-		margin-bottom: 5vh;
-	}
-
-	#second1 {
-		margin-top: 0;
-		height: 50vh;
-		float: right;
-		width: 50vw;
-		margin-right: 8vw;
-		background-image: url("http://news.nationalgeographic.com/content/dam/news/2015/06/12/palaupristineseas/01palaupristineseas.adapt.1190.1.jpg");
-		background-size: cover;
-	}
-
-	#third1 {
-		margin-top: 25vh;
-		height: 40vh;
-		background-image: url("http://voices.nationalgeographic.com/files/2011/11/python.jpg");
-		background-size: cover;
-	}
-
-	#fourth1 {
-		color: white;
-		font-family: 'Arimo';
-		font-size: 150%;
-		padding-left: 5vw;
-		padding-top: 7vh;
-		font-weight: 800;
-	}
-
-	#fifth1 {
-		color: white;
-		font-family: 'Arimo';
-		font-size: 150%;
-		padding-left: 5vw;
-		padding-top: 7vh;
-		font-weight: 800;
-	}
-
-	#sixth1 {
-		color: white;
-		font-family: 'Arimo';
-		font-size: 150%;
-		padding-left: 5vw;
-		padding-top: 7vh;
-		font-weight: 800;
-		height: 28vh;
+		font-size: 600%;
+		color: $Nat-color;
+		margin-top: 10vh;
+		margin-bottom: 0px;
 	}
 }
+#third1{
 
-.top5 {
-	height: 15vh;
-	width: 32vw;
-	border-left: solid #FBD42C;
-	border-left-width: 1px;
-	float: left;
-	margin-left: 5vw;
+		.covering {
+			height: 23vh;
+	    width: 20vw;
+	    float: left;
+	    border-bottom:1px solid grey;
+	    padding-left: 0px;
+	    margin-left: 0;
+
+		}
+		h5 {
+			border-left: solid white;
+		    border-right: solid white;
+		    border-width: 1px;
+		    font-size: 80%;
+		    font-family: 'Arimo';
+		    width: 145px;
+		    padding-left: 1vw;
+		    padding-right: 1vw;
+				color: white;
+				letter-spacing: .1em;
+				margin-top: 3vh;
+		}
+		h3 {
+			font-size: 130%;
+			font-family: 'Arimo';
+			font-weight: 700;
+			margin-bottom: 2vh;
+			color: white;
+			width: 19vw;
+		}
+		p {
+			float: right;
+			font-size: 600%;
+			color: $Nat-color;
+			margin-top: 10vh;
+			margin-bottom: 0px;
+		}
+}
+#fourth1{
+	.covering {
+		height: 23vh;
+    width: 20vw;
+    float: left;
+    border-bottom:1px solid grey;
+    padding-left: 0px;
+    margin-left: 0;
+
+	}
+	h5 {
+		border-left: solid white;
+	    border-right: solid white;
+	    border-width: 1px;
+	    font-size: 80%;
+	    font-family: 'Arimo';
+	    width: 145px;
+	    padding-left: 1vw;
+	    padding-right: 1vw;
+			color: white;
+			letter-spacing: .1em;
+			margin-top: 3vh;
+	}
+	h3 {
+		font-size: 130%;
+		font-family: 'Arimo';
+		font-weight: 700;
+		margin-bottom: 2vh;
+		color: white;
+		width: 19vw;
+	}
+	p {
+		float: right;
+		font-size: 600%;
+		color: $Nat-color;
+		margin-top: 10vh;
+		margin-bottom: 0px;
+	}
+}
+#fifth1{
+		.covering {
+			height: 23vh;
+	    width: 20vw;
+	    float: left;
+	    border-bottom:1px solid grey;
+	    padding-left: 0px;
+	    margin-left: 0;
+
+		}
+		h5 {
+			border-left: solid white;
+		    border-right: solid white;
+		    border-width: 1px;
+		    font-size: 80%;
+		    font-family: 'Arimo';
+		    width: 145px;
+		    padding-left: 1vw;
+		    padding-right: 1vw;
+				color: white;
+				letter-spacing: .1em;
+				margin-top: 3vh;
+		}
+		h3 {
+			font-size: 130%;
+			font-family: 'Arimo';
+			font-weight: 700;
+			margin-bottom: 2vh;
+			color: white;
+			width: 19vw;
+		}
+		p {
+			float: right;
+			font-size: 600%;
+			color: $Nat-color;
+			margin-top: 10vh;
+			margin-bottom: 0px;
+		}
+}
+#sixth1 {
+	.covering {
+		height: 23vh;
+		width: 20vw;
+		float: left;
+		border-bottom:1px solid grey;
+		padding-left: 0px;
+		margin-left: 0;
+
+	}
+	h5 {
+		border-left: solid white;
+			border-right: solid white;
+			border-width: 1px;
+			font-size: 80%;
+			font-family: 'Arimo';
+			width: 145px;
+			padding-left: 1vw;
+			padding-right: 1vw;
+			color: white;
+			letter-spacing: .1em;
+			margin-top: 3vh;
+	}
+	h3 {
+		font-size: 130%;
+		font-family: 'Arimo';
+		font-weight: 700;
+		margin-bottom: 2vh;
+		color: white;
+		width: 19vw;
+	}
+	p {
+		float: right;
+		font-size: 600%;
+		color: $Nat-color;
+		margin-top: 10vh;
+		margin-bottom: 0px;
+	}
+}
+.numba {
 	margin-right: 5vw;
-	font-size: 345%;
-	color: white;
-	margin-top: 10vh;
-	padding-left: 5vw;
-	font-family: 'Montserrat';
-	letter-spacing: 0.1em;
+}
+.fatty {
+
+    width: 50vw;
+    height: 180vh;
+    float: right;
+    margin-right: 5vw;
+    margin-top: 12vh;
+		h1 {
+			border-left: solid #FBD42C;
+    height: 15vh;
+    padding-left: 3vw;
+    font-size: 405%;
+    letter-spacing: .1em;
+    color: white;
+    font-family: 'Didact Gothic', serif;
+		margin-bottom: 0px;
+		border-width: 1px;
+		}
+		h3 {
+			color: white;
+			font-weight: 900;
+			font-family: 'Arimo';
+
+		}
+}
+.fatPic {
+	background-image: url(http://news.nationalgeographic.com/content/dam/news/2017/04/11/rivers/1-NationalGeographic_1048916.ngsversion.1491885003900.adapt.885.1.jpg);
+	height: 70vh;
+	width: 50vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.fatPic2 {
+	background-image: url(https://i.ytimg.com/vi/WLVOVzH2rvc/maxresdefault.jpg);
+	height: 70vh;
+	width: 50vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+.fatPic3{
+background-image: url(http://news.nationalgeographic.com/content/dam/news/2017/04/10/mariana-trench/02-mariana-trench-serpentine-2.ngsversion.1491857502928.adapt.885.1.jpg);
+height: 25vh;
+width: 25vw;
+background-size: cover;
+background-repeat: no-repeat;
+float: left;
+}
+.fatPic4{
+background-image: url(http://news.nationalgeographic.com/content/dam/news/2015/09/17/okavango/01okavango.ngsversion.1491851167704.adapt.885.1.jpg);
+height: 25vh;
+width: 25vw;
+background-size: cover;
+background-repeat: no-repeat;
+float: right;
+}
+.bottomTitle {
+	height: 15vh;
+	width: 50vw;
+	margin-top: 2vh;
+	float: left;
+	 h4 {
+		 width: 25vw;
+		 color: white;
+		 float: left;
+		 font-weight: 900;
+		 font-family: 'Arimo';
+
+	 }
+
 }
 
 .newest {
@@ -1190,8 +1451,8 @@ p{
 /*NEXT VIEW*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #theBigg {
 	font-family: 'Arimo', serif;
-font-size: 450%;
-margin-top: 13vh;
+font-size: 460%;
+margin-top: 10vh;
 margin-bottom: 4vh;
 height: 12vh;
 width: 90vw;
@@ -1363,8 +1624,35 @@ margin-left: 15px;
 	h1 {
 		letter-spacing: .2em;
 font-size: 333%;
-margin-left: 25vw;
+margin-left: 26vw;
 font-family: 'Didact Gothic', serif;
 margin-top: 10vh;
 	}
+	#seeMore {
+		margin-top: 8vh;
+    margin-left: 42vw;
+    font-size: 125%;
+    text-decoration: underline;
+		text-decoration-color: $Nat-color;
+    font-family: 'Didact Gothic', serif;
+    font-weight: 700;
+		letter-spacing: .1em;
+	}
+}
+.wrapDay1 {
+	float: left;
+	width: 84vw;
+	height: 70vh;
+
+	margin-top: 2vh;
+	margin-left: 8vw;
+
+div {
+	width: 25vw;
+	height: 65vh;
+	float: left;
+	margin-left: 2vw;
+	margin-top: 5vh;
+
+}
 }
