@@ -13,7 +13,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	font: 100% $font-stack;
 	background-color: $primary-color;
 	width: $full-screen;
-	height: 8vh;
+	height: 42px;
 	letter-spacing: 0.1em;
 
 	div {
@@ -44,6 +44,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		margin-top: $line;
 		font-weight: 100;
 		margin-right: 25px;
+		border: none;
 
 	}
 
@@ -627,7 +628,7 @@ float: right;
 }
 #second1 {
 	.covering {
-		height: 23vh;
+		height: 20vh;
     width: 20vw;
     float: left;
     border-bottom:1px solid grey;
@@ -668,7 +669,7 @@ float: right;
 #third1{
 
 		.covering {
-			height: 23vh;
+			height: 20vh;
 	    width: 20vw;
 	    float: left;
 	    border-bottom:1px solid grey;
@@ -707,7 +708,7 @@ float: right;
 }
 #fourth1{
 	.covering {
-		height: 23vh;
+		height: 20vh;
     width: 20vw;
     float: left;
     border-bottom:1px solid grey;
@@ -746,7 +747,7 @@ float: right;
 }
 #fifth1{
 		.covering {
-			height: 23vh;
+			height: 20vh;
 	    width: 20vw;
 	    float: left;
 	    border-bottom:1px solid grey;
@@ -785,7 +786,7 @@ float: right;
 }
 #sixth1 {
 	.covering {
-		height: 23vh;
+		height: 20vh;
 		width: 20vw;
 		float: left;
 		border-bottom:1px solid grey;
@@ -1373,6 +1374,7 @@ div {
 
 }
 }
+/*This is one of the main outlines for pic/vid title then heading remember code.*/
 #firstBox {
 .janPic {
 	background-size: cover;
@@ -1388,6 +1390,22 @@ div {
 	height: 35vh;
 	width: 25vw
 }
+.scotStry {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(http://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2017/05/Scottish-Moors/1-scottish-moors-scotland-terrain-conservation-land.adapt.1190.1.jpg);
+	height: 35vh;
+	width: 25vw
+}
+.cheadleStry {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(http://ecowarriorprincess.net/wp-content/uploads/2016/11/Don-Cheadle-Years-of-Living-Dangerously-National-Geographic-810x540.jpg);
+	height: 50vh;
+	width: 35vw;
+	float: left;
+}
+
 h3 {
 	font-weight: 600;
 	font-family: 'Arimo';
@@ -1398,6 +1416,7 @@ p{
 	padding-left: 2vw;
 }
 }
+/*THIS IS THE NEXT MAIN DIV OUTLINE*///////////////////////////////////////////
 #secondBox {
 	.decPic {
 		background-size: cover;
@@ -1413,6 +1432,21 @@ p{
 		height: 35vh;
 		width: 25vw
 	}
+	.powderStry {
+		background-size: 320px 225px;
+		background-repeat: no-repeat;
+		background-image: url(http://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2017/05/Departments/Explore/Egyptian-blue_cropped.ngsversion.1490115267040.adapt.885.1.jpg);
+		height: 35vh;
+		width: 25vw
+	}
+	.migrantStry {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(http://news.nationalgeographic.com/content/dam/news/photos/legacy-new/85055_990x742-cb1414416640.jpg);
+		height: 50vh;
+		width: 35vw;
+		float: left;
+	}
 	h3 {
 		font-weight: 600;
 		font-family: 'Arimo';
@@ -1425,7 +1459,7 @@ p{
 }
 #thirdBox {
 	.bestPic {
-		background-size: cover;
+		background-size: 320px 225px;
 		background-repeat: no-repeat;
 		background-image: url(http://www.nationalgeographic.com/content/dam/photography/rights-exempt/your-shot/best-pod-2016-07b.ngsversion.1481034984962.adapt.885.1.jpg);
 		height: 35vh;
@@ -1435,6 +1469,13 @@ p{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-image: url(http://news.nationalgeographic.com/content/dam/news/2017/04/07/tree-crab/tree-crab-discovery-2.adapt.1190.1.jpg);
+		height: 35vh;
+		width: 25vw
+	}
+	.waterStry {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(http://www.nationalgeographic.com/content/dam/magazine/rights-exempt/2017/04/Departments/Field-Notes/STOCK_KJ16063.ngsversion.1491451275477.adapt.1900.1.jpg);
 		height: 35vh;
 		width: 25vw
 	}
@@ -1621,6 +1662,7 @@ margin-left: 15px;
 }
 .magCase {
 	float: left;
+	height: 107vh;
 	h1 {
 		letter-spacing: .2em;
 font-size: 333%;
@@ -1655,4 +1697,53 @@ div {
 	margin-top: 5vh;
 
 }
+}
+.yearsCase {
+float: left;
+height: 130vh;
+width: $full-screen;
+
+h1 {
+	letter-spacing: .2em;
+font-size: 333%;
+margin-left: 13vw;
+font-family: 'Didact Gothic', serif;
+margin-top: 10vh;
+}
+#seeMore {
+	margin-top: 8vh;
+	margin-left: 37vw;
+	font-size: 125%;
+	text-decoration: underline;
+	text-decoration-color: $Nat-color;
+	font-family: 'Didact Gothic', serif;
+	font-weight: 700;
+	letter-spacing: .1em;
+}
+
+}
+.wrapDay2 {
+	float: left;
+	width: 84vw;
+	height: 70vh;
+
+	margin-top: 2vh;
+	margin-left: 8vw;
+
+#firstBox {
+	width: 25vw;
+	height: 65vh;
+	float: left;
+	margin-left: 5vw;
+	margin-top: 5vh;
+
+}
+#secondBox {
+	width: 25vw;
+	height: 65vh;
+	float: left;
+	margin-left: 13vw;
+	margin-top: 5vh;
+}
+
 }
