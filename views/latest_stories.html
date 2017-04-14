@@ -6,18 +6,24 @@
 <div class="feed">
 
 <h1>LATEST STORIES</h1>
+<div>
 <div class="mainArt"></div>
-<h2>Watch as Octupus Eats Jellyfish</h2>
+<h2>Title</h2>
 <p>A remotely operated vehicle caught the moment a rarely seen deep-sea octopus ate a jellyfish and dragged its tentacles, possibly to use for defense.</p>
-<div class="miniArt">
+
+
+<div class="miniArt" ng-repeat='d in data'>
 	<div class="miniWords">
 		<ul>Weird & Wild</ul>
-		<h4>Striking Yellow-Black Rain Frog Found, Is Already Endangered</h4>
-		<p>The rare amphibian lives in an overlooked region in Ecuador, scientists say.</p>
+		<h4>{{d.title}}</h4>
+		<p>{{d.description}}</p>
 	</div>
-	<div class="miniPic"></div>
+	<div class="miniPic"><img src="{{d.urlToImage}}" alt=""></div>
 </div>
-<div class="miniArt"><div class="miniWords">
+</div>
+
+
+<!-- <div class="miniArt"><div class="miniWords">
 	<ul>Weird & Wild</ul>
 	<h4>Striking Yellow-Black Rain Frog Found, Is Already Endangered</h4>
 	<p>The rare amphibian lives in an overlooked region in Ecuador, scientists say.</p>
@@ -37,7 +43,7 @@
 	<p>The rare amphibian lives in an overlooked region in Ecuador, scientists say.</p>
 </div>
 <div class="miniPic"></div>
-</div>
+</div> -->
 <div class="showMore">SHOW MORE</div>
 </div>
 <div class="whiteSpace"></div>

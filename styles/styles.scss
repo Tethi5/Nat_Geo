@@ -152,6 +152,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 	background-size: cover;
 	font-family: 'Bitter', serif;
 	padding-top: 60vh;
+	top: -5px;
 }
 
 #label {
@@ -1129,7 +1130,7 @@ button {}
 
 .feed {
 	float: left;
-	height: 350vh;
+	// height: 350vh;
 	width: 50vw;
 	margin-left: 10vw;
 	margin-top: 10vh;
@@ -1148,7 +1149,7 @@ button {}
 }
 
 .miniArt {
-	height: 55vh;
+	height: 51vh;
 	width: 52vw;
 	margin-top: 3vh;
 }
@@ -1184,9 +1185,13 @@ button {}
 .miniPic {
 	height: 54vh;
 	width: 31vw;
-	background-image: url("http://news.nationalgeographic.com/content/dam/news/2017/04/05/frog-ecuador/01-new-frog-species-ecuador.adapt.1190.1.jpg");
 	background-size: 394px 312px;
 	background-repeat: no-repeat;
+	img {
+ 	width: 100%;
+	height: 85%;
+
+ }
 }
 
 .showMore {
@@ -1757,6 +1762,20 @@ margin-top: 10vh;
 		font-weight: 700;
 		margin-left: 44vw;
 		}
+		e {
+			color: $Nat-color;
+			font-weight: 700;
+		}
+		#natLogo{
+			height: 10vh;
+width: 5vw;
+background-image: url(http://www.nationalgeographic.com/etc/designs/platform/v2/images/favicon.ngsversion.93df43dc.png);
+float: left;
+background-size: cover;
+position: absolute;
+right: 18vw;
+bottom: 8vh;
+		}
 }
 .casePics {
 	height: 80vh;
@@ -1767,6 +1786,23 @@ margin-top: 10vh;
 	margin-top: 10vh;
 	div {
 		border-radius: 10px 10px 10px 10px;
+	}
+	#holdingCell2 {
+		height: 5vh;
+    width: 15vw;
+    float: right;
+    margin-right: 10px;
+    margin-top: 4px;
+    border: solid black;
+    border-width: 2px;
+    border-radius: 0px;
+				input {
+					margin-top: 4px;
+    border: none;
+    margin-left: 8px;
+		color: black;
+		font-family: 'Arimo'
+				}
 	}
 	#pics1 {
 		float: left;
@@ -1799,11 +1835,22 @@ margin-top: 10vh;
 		float: right;
 height: 15vh;
 width: 25vw;
-border: solid black;
 position: absolute;
 margin-top: 30vh;
 margin-left: 22vw;
 	}
+	h1 {
+		margin-left: 8vw;
+    margin-top: -15px;
+    font-family: 'Didact Gothic';
+    font-size: 340%;
+    color: black;
+    letter-spacing: .1em;
+		font-weight: 100
+
+	}
+
+
 	#pics5  {
 		float: right;
 		height: 40vh;
@@ -1824,8 +1871,30 @@ margin-left: 22vw;
 height: 32vh;
 width: 26vw;
 border: solid black;
+border-width: 1px;
 margin-right: 2vw;
-margin-top: 3vh
+margin-top: 3vh;
+background-image: url(http://68.media.tumblr.com/16cf116ab33564fa3b68001f595a8c76/tumblr_o85xq2hqFG1s7f3fyo1_1280.jpg);
+background-size: cover;
 	}
+
+}
+#facebookIcon {
+	float: left;
+    height: 6vh;
+    width: 3vw;
+
+    margin-left: 3vw;
+		background-image: url(http://simpleicon.com/wp-content/uploads/facebook-2.png);
+		background-size: cover;
+
+}
+
+#instaIcon {
+	float: left;
+    height: 6vh;
+    width: 3vw;
+		background-image: url(https://maxcdn.icons8.com/Share/icon/androidL/Logos//instagram_new1600.png);
+		background-size: cover;
 
 }

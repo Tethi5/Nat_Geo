@@ -12,6 +12,7 @@
     "gulp-cachebust": "0.0.6",
     "gulp-print": "^2.0.1",
     "gulp-sourcemaps": "^2.5.0",
+    "nat-geo-api": "^1.0.0",
     "nodes": "^0.1.0"
   },
   "devDependencies": {
