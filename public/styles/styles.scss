@@ -97,7 +97,7 @@ $font-stack1: 'Didact Gothic', sans-serif, grey;
 		padding-right: 4vw;
 		padding-left: 3vw;
 		border-right: solid thin grey;
-		font: 'Didact Gothic';
+		font-family: "Didact Gothic";
 		font-weight: 400;
 		color: darkgrey;
 		font-size: 105%;
@@ -1956,4 +1956,61 @@ background-size: cover;
 		p{
 			margin-top: 3px;
 		}
+		button {
+			background-color: #FBD42C;
+    border: none;
+    margin-top: 3px;
+		}
+}
+.gallery {
+	height: 80vh;
+	width: 100vw;
+	background-color: black;
+	float: left;
+}
+#specbox {
+	label:focus {
+	outline: 1px dotted #000;
+	outline-color: blue;
+	}
+	pointer-events: none;
+	cursor: pointer;
+
+}
+
+#caseLabel {
+
+}
+.inputfile {
+	height: 5vh;
+
+    overflow: hidden;
+    position: absolute;
+    /* z-index: -1; */
+    cursor: pointer;
+}
+#sleeve1 {
+	display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    position: absolute;
+    width: 95px;
+    color: white;
+    background-color: black;
+    margin-top: 0px;
+    left: 12px;
+    text-align: center;
+    height: 22px;
+    padding: 3px;
+    font-size: 83%;
+    border-radius: 2px;
+		pointer-events: none;
+		cursor: pointer;
+}
+.strayButton {
+	margin-top: 7vh;
+}
+#submitButton {
+	margin-top: 10vh;
 }
