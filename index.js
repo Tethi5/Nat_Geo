@@ -50,8 +50,7 @@ app.post('/api/picture', function(req, res) {
             storage: storage
         }).single('image')
         upload(req, res, function(err) {
-            res.end(console.log('saved a new photo!'))
-            console.log('saved a new photo!')
+            console.log('saved photo to storage BRUHHH!')
         })
     })
 app.post('/api/photo/table', tableController.create);

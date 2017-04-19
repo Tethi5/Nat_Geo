@@ -10,7 +10,8 @@ CREATE TABLE if not exists images (
 	hashtags VARCHAR(101) ,
 	date DATE,
 	comments VARCHAR(450),
-	image_url VARCHAR(10000) 
+	image_url VARCHAR(10000)
+	
 );
 -- INSERT INTO images(author,hashtags,date, likes,comments,image_url,image)
 -- VALUES
