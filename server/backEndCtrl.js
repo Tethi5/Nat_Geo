@@ -12,16 +12,15 @@ module.exports = {
                 }
             })
         },
-        postPhoto: function(req, res, next) {
-            db.post_Photo([req.body.name, req.body.filterName, req.body.extra, req.body.image], function(err, photo) {
-                if (err) {
-                    console.log(err)
-                    return res.status(500).send(err)
-                } else {
-                    res.send(photo)
-                    console.log('sent another row to your database.BOI!!')
-                }
-            })
+
+        findPic: function(req,res,next) {
+          db.get_pic([], function(err, pic){
+            if (err){
+              return res.status(500).send(err)
+            } else {
+              res.send(pic)
+            }
+          })
         },
 
     findTable: function(req, res, next) {

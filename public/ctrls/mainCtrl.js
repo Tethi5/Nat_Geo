@@ -1,6 +1,7 @@
 angular.module('myApp').controller('mainCtrl', function($scope, myService) {
     $scope.getPhoto = function() {
         myService.getPhoto().then(function(response) {
+          console.log('working')
             $scope.data = response.data.articles
             console.log($scope.data)
         })
@@ -11,12 +12,20 @@ angular.module('myApp').controller('mainCtrl', function($scope, myService) {
     //         $scope.photos.push(x)
     //     })
     // });
+
+    //////MY API's///////////s
     $scope.add = function() {
 					myService.postPhoto($scope.author, $scope.filter,$scope.comments, $scope.image)
     }
 $scope.send = function() {
   myService.postPicture($scope.picture)
 }
+myService.getAllPhotos();
+myService.getPhoto().then(function(response) {
+  console.log('working')
+    $scope.data = response.data.articles
+    console.log($scope.data)
+})
 });
 
 

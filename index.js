@@ -1,8 +1,9 @@
 // $ = require('jquery');
 // require('bootstrap');
 // require('bootstrap-loader');
-
+console.log('top')
 const express = require('express');
+const gsap = require('gsap');
 // const bootstrap = require('bootstrap');
 const photo = require('nat-geo-api');
 const massive = require('massive');
@@ -11,11 +12,10 @@ const bodyParser = require('body-parser');
 const multer = require('multer')
 const app = module.exports = express();
 app.use(bodyParser.json());
-app.use(bodyParser.json({limit: '50mb'}));
-app.use(bodyParser.urlencoded({limit: '50mb'}));
-app.use(express.static('./public'));
 
-///////////INITILIZE APP///////////////////////
+app.use(express.static(__dirname + '/public'));
+
+/////////INITILIZE APP///////////////////////
 
 
 ///////////MASSIVE SETUP //////////////////////
@@ -33,26 +33,45 @@ db.build_tables(function(err, res) {
 //////////Controllers /////////////////////////
 var tableController = require('./server/backEndCtrl.js')
 ///////////Products Endpoints//////////////////
+var filename
 app.get('/api/photo', tableController.getPhoto);
 app.get('/api/photo/:id', tableController.findTable);
-app.post('/api/photo', tableController.postPhoto);
+app.get('/api/picture', tableController.findPic);
+
+app.post('/api/photo', function(req, res, next) {
+
+    db.post_Photo([req.body.name, req.body.filterName, req.body.extra, filename], function(err, photo) {
+        if (err) {
+
+            return res.status(500).send(err)
+        } else {
+            res.send(photo)
+            console.log('sent another row to your database.BOI!!')
+        }
+    })
+});
+
 let storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, './uploads')
+      console.log(file)
+        cb(null, './picture')
     },
     filename: function (req, file, cb) {
+      filename = Date.now() + file.originalname;
         cb(null, Date.now() + file.originalname)
   }
 })
 
-app.post('/api/picture', function(req, res) {
+app.post('/climate', function(req, res) {
         var upload = multer({
             storage: storage
         }).single('image')
         upload(req, res, function(err) {
-            console.log('saved photo to storage BRUHHH!')
+          console.log(err)
+          res.redirect('/climate')
         })
-    })
+    });
+
 app.post('/api/photo/table', tableController.create);
 app.put('/api/photo/:id', tableController.update);
 app.delete('/api/photo/:id', tableController.delete);
