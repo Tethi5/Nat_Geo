@@ -1,7 +1,7 @@
 <div id="relative">
 	<div class="header">
-		<span id="label">Autism Awareness Day</span>
-		<ul id="title1">Watch This Autistc Artist Paint A Whole City</ul>
+		<!-- <span id="label">Autism Awareness Day</span> -->
+		<ul id="title1">Smartphones, the Internet- And 5 More Goverment-Funded Inventions</ul>
 	</div>
 
 
@@ -37,16 +37,23 @@
 			<div class="photoDay">PHOTO OF THE DAY</div>
 		</div>
 	</div>
+	<div class="filler"></div>
 	<div class="topStories">
 		<div class="topTitle">VIDEOS TO WATCH</div>
 		<div class="column">
-			<ul id="first">Watch: Extremely Rare Tigers Caught On Camera In Thailand</ul>
-			<ul id="second">Watch a Badger Bury an Entire Cow (Never Before Seen)</ul>
-			<ul id="third">Why Billions of Fish Are Luring Scientists to This River</ul>
-			<ul id="fourth">Do You Touch This Nasty Object Every Day?</ul>
-			<ul id="fourth">Do You Touch This Nasty Object Every Day?</ul>
+			<ul ng-click="showVid1()" id="first"><span></span>Watch: Extremely Rare Tigers Caught On Camera In Thailand | National Geographic</ul>
+			<ul ng-click="showVid2()" id="second"><span></span>Watch a Badger Bury an Entire Cow (Never Before Seen) | National Geographic</ul>
+			<ul ng-click="showVid3()"id="third"><span></span>Why Billions of Fish Are Luring Scientists to This River | National Geographic</ul>
+			<ul ng-click="showVid4()"id="fourth"><span></span>Do You Touch This Nasty Object Every Day? | National Geographic</ul>
+			<ul ng-click="showVid5()"id="fifth"><span></span>How Nuclear Bombs are Helping Fight Elephant Poachers | National Geographic</ul>
 		</div>
-		<ul id="play"></ul>
+		<ul id="play">
+			<iframe ng-show="vid1" width="560" height="315" src="https://www.youtube.com/embed/bYxpLagWoWU" frameborder="0" allowfullscreen></iframe>
+			<iframe ng-show="vid2" width="560" height="315" src="https://www.youtube.com/embed/14i02f31WDI" frameborder="0" allowfullscreen></iframe>
+			<iframe ng-show="vid3"width="560" height="315" src="https://www.youtube.com/embed/FXaFemwAYSw" frameborder="0" allowfullscreen></iframe>
+			<iframe ng-show="vid4"width="560" height="315" src="https://www.youtube.com/embed/FX280rLzDFg" frameborder="0" allowfullscreen></iframe>
+			<iframe ng-show="vid5"width="560" height="315" src="https://www.youtube.com/embed/_2j4xU2RU9k" frameborder="0" allowfullscreen></iframe>
+		</ul>
 	</div>
 	<div class="filler"></div>
 
@@ -121,11 +128,52 @@
 	</div>
 	<div class="filler"></div>
 	<div class="wrapper2"></div>
+<div class="magazine">
+	<h2>National Geographic Magazine</h2>
+	<div class="contentNow">
+		<div id="caveman">
+			<h7>April 2017 Issue</h7>
+			<h1>How Humans Are Shaping Our Own Evolution</h1>
+		</div>
+		<div id="cavemanInfo">
+			<p><e>ADAPTED TO A DESERT CLIMATE</e> <o>8,000 Years ago:</o> The desert presented an evolutionary challenge for the inhabitants of Sahul, the continent that once united Australia, New Guinea, and Tasmania. After the ancestors of modern Aboriginals made the crossing to Sahul, around 50,000 years ago, they developed adaptations that allowed them to survive below-freezing temperatures at night and days often exceeding 100 degrees Fahrenheit. A genetic mutation in a metabolism-regulating hormone provides this survival advantage, especially for infants, by modulating the excess energy that’s produced when body temperature rises.
+			</p>
+			<p><i>OWEN FREEMAN</i></p>
+		</div>
+		<div id='issue'>
+			<div class='blackBox'>
+				<h8>SUBSCRIBE</h8>
+				<h7> TO ACCESS THIS MONTHS ISSUE</h7>
+				<picture></picture>
+			</div>
+			<div id='greyMatter'>
+				<h8></h8>
+				<h1></h1>
+				<h1></h1>
+				<h1></h1>
+				<h1></h1>
+			</div>
+		</div>
+		<div id='infoContent'>
+			<h5>About This Month's Cover Story:</h5>
+			<p>Like other species, we are the products of millions of years of adaptation.</p>
+			<p>Modern humans migrated from Africa between 80,000 and 50,000 years ago. Our original genetic makeup was appropriate for the warm climates where we first evolved from early hominins to humans, from knuckle-walkers to hunters and gatherers. But a lot has happened since then, as humans have expanded around the world and the demands posed by new challenges have altered our genetic makeup.</p>
+			<p>Real-life examples of this evolution are everywhere. Australian Aboriginals living in desert climates have a genetic variant, developed in the past 10,000 years, that allows them to adjust more easily to extremely high temperatures. The ancestors of all non-Africans came out of Africa with dark skin. As recently as 10,000 years ago, researchers say, European and African skin looked much the same. But over time humans in darker northern climates evolved less heavily pigmented skin, which helped absorb the sun’s ultraviolet rays and synthesize vitamin D more efficiently. Researchers have uncovered a variety of adaptions in Andeans, Ethiopians, and Tibetans that allow them to breathe efficiently at high altitudes.</p>
+			<p>But what if humans could develop ways to speed up the typically long process of evolution?</p>
+			<p>In our April cover story, you’ll see how technology is creating new frontiers for human development, faster than our ancestors could have dreamed. From implants that give “cyborg” humans greater capabilities, to gene-editing tools that could bring about human-directed evolution, the pace of change could be breathtaking.</p>
+		</div>
+	</div>
+	<div id="readMore">READ MORE</div>
+</div>
+
+
+
 	<div class="wrapper3">
 		<div id="box1"></div>
 		<div id="box2"></div>
-		<h7>RHINOS FOR SALE</h7>
+		<span id="bittie">RHINOS FOR SALE</span>
 		<div id="box3">EXPLORER</div>
+		<span id='tonight'>TONIGHT 8/7</span>
 	</div>
 	<div class="filler"></div>
 </div>
