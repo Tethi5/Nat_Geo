@@ -15,11 +15,13 @@ angular.module('myApp', ['ui.router'])
             })
             .state('photo', {
               url: '/photo',
-              templateUrl: './views/photo.html'
+              templateUrl: './views/photo.html',
+              controller: 'mainCtrl'
             })
             .state('climate', {
               url: '/climate',
-              templateUrl: './views/climate.html'
+              templateUrl: './views/climate.html',
+              controller: 'mainCtrl'
             })
 
         $urlRouterProvider

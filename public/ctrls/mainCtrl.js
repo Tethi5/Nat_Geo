@@ -29,36 +29,50 @@ myService.getPhoto().then(function(response) {
 
 // Jquery for scroll from top
 $(window).scroll(function() {
-   var winScroll = $(this).scrollTop();
-   
+  var container = $('.theAd');
+    var minTop = $('.ad').outerHeight();
+    var maxTop = $('.whiteSpace').offset().top - container.outerHeight();
+
+   var winScroll = $(this).scroll(function() {
+container.css('top', Math.min( Math.max(minTop, $(document).scrollTop()), maxTop ));
+    });
+   console.log(winScroll);
 
    // Fixed on scroll Ad
-   if (winScroll > 400) {
-       $('.theAd').css({
-           'position': 'fixed',
-           'top': 5
+  //  if (winScroll > 766) {
+  //      $('.theAd').css({
+  //          'position': 'fixed',
+  //          'top': 5
+   //
+  //      })
+  //   } else if (winScroll <= 765) {
+  //     $('.theAd').css({
+  //       'position': 'static',
+  //       'top': 5
+   //
+  //     })
+  //   }
+  //    if (winScroll > 4430){
+  //       $('.theAd').css({
+  //         'position': 'static',
+   //
+   //
+  //       })
+  //     } else if (winScroll >= 4440){
+  //       $('.theAd').css({
+  //         'position': 'fixed'
+  //       })
+  //     }
 
-       })
-    } else if (winScroll <= 399) {
-      $('.theAd').css({
-        'position': 'static',
-        'top': 5
-
-      })
-    }
-     if (winScroll > 4072){
-        $('.theAd').css({
-          'position': 'static',
-          'top': 4075
-        })
-      } else if (winScroll >= 4073){
-        $('.theAd').css({
-          'position': 'static',
-          'top': 5
-        })
-      }
     });
+  $scope.bigAd1 = true;
 
+  $scope.hideIt = function(){
+    $scope.bigAd1 = false;
+  }
+  $scope.showIt = function(){
+    $scope.bigAd1 = true;
+  }
 
   $scope.vid1 = true;
   $scope.vid2 = false;
@@ -103,10 +117,52 @@ $scope.showVid5 = function(){
   $scope.vid5 = true;
 }
 
+
+
+
+$scope.stream1 = true;
+$scope.stream2 = false;
+$scope.stream3 = false;
+$scope.stream4 = false;
+$scope.stream5 = false;
+
+$scope.showStream1 = function(){
+$scope.stream1 = true;
+$scope.stream2 = false;
+$scope.stream3 = false;
+$scope.stream4 = false;
+$scope.stream5 = false;
+console.log('Yea it hit')
+}
+$scope.showStream2 = function(){
+  $scope.stream1 = false;
+  $scope.stream2 = true;
+  $scope.stream3 = false;
+  $scope.stream4 = false;
+  $scope.stream5 = false;
+}
+$scope.showStream3 = function(){
+  $scope.stream1 = false;
+  $scope.stream2 = false;
+  $scope.stream3 = true;
+  $scope.stream4 = false;
+  $scope.stream5 = false;
+}
+$scope.showStream4 = function(){
+  $scope.stream1 = false;
+  $scope.stream2 = false;
+  $scope.stream3 = false;
+  $scope.stream4 = true;
+  $scope.stream5 = false;
+}
+$scope.showStream5 = function(){
+  $scope.stream1 = false;
+  $scope.stream2 = false;
+  $scope.stream3 = false;
+  $scope.stream4 = false;
+  $scope.stream5 = true;
+}
 });
-
-
-
 // var app = require('../index');
 // var Db = app.get('Db');
 //

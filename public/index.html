@@ -12,8 +12,8 @@
 	<title>Nat_Geo</title>
 </head>
 
-<body>
-	<div id="Genius"></div>
+<body ng-controller='mainCtrl'>
+	<div ng-show="bigAd1" id="Genius"></div>
 	<nav class="bar">
 		<div class="left">Explore Nat-Geo</div>
 		<div class="middle">
@@ -33,14 +33,13 @@
 
 
 	<div class="bar2">
-		<div id="size1" ui-sref="home">
+		<div id="size1" ui-sref="home" ng-click="showIt()">
 			<div id="logo"></div>
 		</div>
 		<div class="inBar">
-			<span class="link" ui-sref="latest">
-		LATEST STORIES</span>
-			<span class="link" ui-sref="photo">PHOTO OF THE DAY</span>
-			<span class="link" ui-sref="climate">CLIMATE ACTION</span>
+			<span ng-click="hideIt()"class="link" ui-sref="latest">LATEST STORIES</span>
+			<span ng-click="hideIt()"class="link" ui-sref="photo">PHOTO OF THE DAY</span>
+			<span  ng-click="hideIt()"class="link" ui-sref="climate">CLIMATE ACTION</span>
 		</div>
 		<div id="buttn">
 			<button class="button">

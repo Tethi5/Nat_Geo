@@ -28,7 +28,7 @@ margin-left: 26vw;
 		float: left;
 		width: 16vw;
 		border-right: $border;
-		margin-top: $line;
+		margin-top: 12px;
 		font-weight: 200;
 		font: 100% $font-stack;
 	}
@@ -48,7 +48,7 @@ margin-left: 26vw;
 		height: 4vh;
 		float: right;
 		width: 7vw;
-		margin-top: $line;
+		margin-top: 13px;
 		font-weight: 100;
 		margin-right: 25px;
 		border: none;
@@ -107,11 +107,18 @@ margin-left: 26vw;
 	span {
 		padding-right: 4vw;
 		padding-left: 3vw;
-		border-right: solid thin grey;
+		border-left: solid grey 1px;
+		border-right: solid  grey 1px;
 		font-family: "Didact Gothic";
 		font-weight: 400;
 		color: darkgrey;
 		font-size: 105%;
+		margin-right: -5px;
+		margin-left: 1px;
+	}
+	span:hover {
+		border-color: $Nat-color;
+
 	}
 
 	.link:hover {
@@ -119,6 +126,11 @@ margin-left: 26vw;
 		color: black;
 	}
 }
+
+#inBar1 {
+	border-left: solid black 1px;
+}
+
 
 #buttn {
 	float: right;
@@ -154,16 +166,16 @@ margin-left: 26vw;
 
 .header {
 	height: 100vh;
-	width: $full-screen;
-	background-image: url("http://news.nationalgeographic.com/content/dam/news/2017/04/20/10-things/ten-things-camera-phones.adapt.1900.1.jpg");
-	float: left;
-	vertical-align: bottom;
-	color: #F7F6F4;
-	position: relative;
-	background-size: cover;
-	font-family: 'Bitter', serif;
-	padding-top: 85vh;
-	top: -5px;
+    width: 100vw;
+    background-image: url(http://news.nationalgeographic.com/content/dam/news/2017/04/20/10-things/ten-things-camera-phones.adapt.1900.1.jpg);
+    float: left;
+    vertical-align: bottom;
+    color: #F7F6F4;
+    position: relative;
+    background-size: cover;
+    font-family: 'Bitter', serif;
+    padding-top: 75vh;
+    top: -5px;
 }
 
 #label {
@@ -186,6 +198,7 @@ margin-left: 26vw;
 	font-size: 300%;
 	padding-top: -1vh;
 	padding-left: 3vw;
+	width: 70vw;
 }
 
 .filler {
@@ -411,7 +424,7 @@ margin-left: 26vw;
 .mainPic {
 	height: 110vh;
 	width: 100vw;
-	background-image: url("http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDth4xPUsHAgJcLyo81JVIKGGCtmINrMumXRDF_WJcMCM-ArmzC2DN3rSg9tXAhP_NaxxVzdHoTh2Gti-12kKSmr--q3V96SPDEl5yBnAxrp6JI7Nf6XxBU-nW16fezvZ8B8wXpQjGsOU6zchyGA0BPDmqKkP-FuNrAoTIzGkQ/");
+	background-image: url("http://yourshot.nationalgeographic.com/u/fQYSUbVfts-T7odkrFJckdiFeHvab0GWOfzhj7tYdC0uglagsDth4B6sfv6TEOVqck2FkT1PCKu92ZxjEgoc8TeD7krCijSwQbQODljBf6YA8RWHYVwt9IXdIu9DZWTvn7Om_5hLmj--8v0DtZIvm-5ubdRj4L1ONtAX9c1yJrWfo_5ku4myvQp-VAHZHlEMBQKNhTdXVHF3Q6YvbfvxKkrtzFwC/");
 	float: left;
 	background-size: cover;
 	background-attachment: fixed;
@@ -439,29 +452,61 @@ margin-left: 26vw;
 	width: 100vw;
 	height: 30vh;
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0.5),transparent);
-	background: linear-gradient(to bottom, rgba(0,0,0,0.5),transparent);
+
 }
 
+
 .photoDay {
-	font-size: 425%;
-	font-weight: 10;
-	color: white;
-	font-family: 'Didact Gothic', serif;
-	width: 100vw;
-	margin-left: 3vw;
-	height: 12vh;
-	border-left: solid white;
-	border-width: 1px;
-	padding-left: 3vw;
-	padding-top: 3vh;
-	letter-spacing: 0.2em;
-	font-weight: lighter;
-	/* opacity: .7; */
-	height: 14vh;
+	font-size: 380%;
+font-weight: 10;
+color: white;
+font-family: 'Didact Gothic';
+width: 100vw;
+margin-left: 3vw;
+height: 12vh;
+border-left: solid white;
+border-width: 1px;
+padding-left: 3vw;
+padding-top: 2vh;
+letter-spacing: 0.2em;
+font-weight: lighter;
+height: 12vh;
+background: linear-gradient(to bottom, rgba(0,0,0,0.5),transparent);
 }
+.artFrom {
+	height: 20vh;
+    width: 100vw;
+    background-color: black;
+    margin-top: 78vh;
+    padding-top: 8vh;
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+#Para1 {
+	font-weight: 700;
+    font-size: 219%;
+    padding-left: 3vw;
+    margin-top: 4vh;
+}
+#Para2 {
+	width: 16vw;
+    margin-left: 21vw;
+    /* background-color: white; */
+    border-left: solid white 1px;
+    padding-left: 2vw;
+    border-right: solid white 1px;
+    letter-spacing: .1em;
+    padding-right: 2vw;
+    font-family: 'Didact Gothic';
+}
+}
+
+
 
 .mainPic:hover {
 	.photoDay {
+		visibility: hidden;
+	}
+	.artFrom {
 		visibility: hidden;
 	}
 }
@@ -668,6 +713,10 @@ background-image: url(http://www.nationalgeographic.com/content/dam/photography/
 background-size: 422px 320px;
 background-repeat: no-repeat;
 float: right;
+p:hover {
+	color: white;
+	cursor: pointer;
+}
 }
 #second1 {
 	.covering {
@@ -707,6 +756,10 @@ float: right;
 		color: $Nat-color;
 		margin-top: 10vh;
 		margin-bottom: 0px;
+	}
+	p:hover {
+		color: white;
+		cursor: pointer;
 	}
 }
 #third1{
@@ -748,6 +801,10 @@ float: right;
 			margin-top: 10vh;
 			margin-bottom: 0px;
 		}
+		p:hover {
+			color: white;
+			cursor: pointer;
+		}
 }
 #fourth1{
 	.covering {
@@ -786,6 +843,10 @@ float: right;
 		color: $Nat-color;
 		margin-top: 10vh;
 		margin-bottom: 0px;
+	}
+	p:hover {
+		color: white;
+		cursor: pointer;
 	}
 }
 #fifth1{
@@ -826,6 +887,11 @@ float: right;
 			margin-top: 10vh;
 			margin-bottom: 0px;
 		}
+		p:hover {
+			color: white;
+			cursor: pointer;
+		}
+
 }
 #sixth1 {
 	.covering {
@@ -865,9 +931,16 @@ float: right;
 		margin-top: 10vh;
 		margin-bottom: 0px;
 	}
+	p:hover {
+		color: white;
+		cursor: pointer;
+	}
 }
 .numba {
 	margin-right: 5vw;
+}
+.numba:hover {
+	color: white;
 }
 .fatty {
 
@@ -1181,6 +1254,11 @@ font-size: 248%;
     margin-left: 16vw;
 
 }
+#readMore:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
 /*FOOTER*/
 ////////////////////////////
 
@@ -1457,7 +1535,7 @@ margin-top: 153px;
 }
 
 .whiteSpace {
-	height: 24vh;
+	height: 15vh;
 	background-color: white;
 	width: 16vw;
 	float: left;
@@ -1466,6 +1544,7 @@ margin-top: 153px;
 	border-width: 2px;
 	margin-left: 40vw;
 	margin-bottom: 10vh;
+
 }
 
 #littleTitle1 {
@@ -1557,8 +1636,10 @@ button {
 ///////////////////////////////////
 #add2 {
 	background-image: url(https://cdn-images-1.medium.com/max/700/0*mX17T0NBkvJQdKFW.jpg);
-	background-size: cover;
-	height: 20vh;
+    background-size: cover;
+    height: 20vh;
+    width: 23vw;
+    margin-left: 40vw;
 }
 .feed2 {
 	float: left;
@@ -1843,12 +1924,16 @@ margin-left: 35vw;
 #newVid {
 	width: 51vw;
 height: 60vh;
-background-image: url(http://geekologie.com/2015/12/07/bill-nye-climate-change.jpg);
-background-size: cover;
-
 margin-right: 2vw;
 float: left;
 margin-bottom: 4vh;
+border: solid white;
+    border-width: 1px;
+		iframe {
+			height: 100%;
+    width: 100%;
+    background-color: black;
+		}
 }
 #scrollVid {
 	width: 25vw;
@@ -1865,6 +1950,7 @@ ul {
 	padding-left: 0px;
 	margin-right: 0px;
 	float: left;
+	cursor: pointer;
 
 }
 }
@@ -1905,11 +1991,12 @@ padding-left: 3vw;
 #uno {
 	height: 60px;
 width: 120px;
-background-image: url(http://geekologie.com/2015/12/07/bill-nye-climate-change.jpg);
+background-image: url('http://geekologie.com/2015/12/07/bill-nye-climate-change.jpg');
 background-size: cover;
 margin-top: 15px;
 float: left;
 margin-left: 15px;
+cursor: pointer;
 }
 .squareAlign {
 	width: 9vw;
@@ -1920,7 +2007,7 @@ margin-left: 15px;
 #does {
 	height: 60px;
 width: 120px;
-background-image: url(http://geekologie.com/2015/12/07/bill-nye-climate-change.jpg);
+background-image: url('http://pmdvod.nationalgeographic.com/NG_Video/756/10/162117-news-continental-drift-101-vin_640x360_791076419711.jpg');
 background-size: cover;
 margin-top: 15px;
 float: left;
@@ -1929,7 +2016,7 @@ margin-left: 15px;
 #tres {
 	height: 60px;
 width: 120px;
-background-image: url(http://geekologie.com/2015/12/07/bill-nye-climate-change.jpg);
+background-image: url('http://pmdvod.nationalgeographic.com/NG_Video/808/431/151210-news-meteor-showers-101-vin_branded_640x360_583896643562.jpg');
 background-size: cover;
 margin-top: 15px;
 float: left;
@@ -1938,7 +2025,7 @@ margin-left: 15px;
 #quatro {
 	height: 60px;
 width: 120px;
-background-image: url(http://geekologie.com/2015/12/07/bill-nye-climate-change.jpg);
+background-image: url('http://ngs-remote-video-import.s3.amazonaws.com/NG_Video/00000150-96d4-dd5e-a751-bfd4a9a50000-hurricanes-101.jpg');
 background-size: cover;
 margin-top: 15px;
 float: left;
@@ -1947,7 +2034,7 @@ margin-left: 15px;
 #cinco {
 	height: 60px;
 width: 120px;
-background-image: url(http://geekologie.com/2015/12/07/bill-nye-climate-change.jpg);
+background-image: url('http://pmdvod.nationalgeographic.com/NG_Video/951/427/tornadoes101_brandedjpg_640x360_581578307802.jpg');
 background-size: cover;
 margin-top: 15px;
 float: left;

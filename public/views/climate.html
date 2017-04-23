@@ -28,27 +28,33 @@
 		<p>Explore and experience the forces that shape the world around us
 			<e>SEE MORE</e>
 		</p>
-		<div id="newVid">Video</div>
+		<div id="newVid">
+			<iframe ng-show="stream1" width="560" height="315" src="https://www.youtube.com/embed/EtW2rrLHs08" frameborder="0" allowfullscreen></iframe>
+			<iframe ng-show="stream2" width="560" height="315" src="https://www.youtube.com/embed/Wq9kLzm36h0" frameborder="0" allowfullscreen></iframe>
+			<iframe ng-show="stream3" width="560" height="315" src="https://www.youtube.com/embed/NwCyN3ZYxKc" frameborder="0" allowfullscreen></iframe>
+			<iframe ng-show="stream4" width="560" height="315" src="https://www.youtube.com/embed/zP4rgvu4xDE" frameborder="0" allowfullscreen></iframe>
+			<iframe ng-show="stream5" width="560" height="315" src="https://www.youtube.com/embed/iMWoYPaQx0Q" frameborder="0" allowfullscreen></iframe>
+		</div>
 		<div id="scrollVid" style="overflow-y:scroll">
-			<ul>
+			<ul ng-click="showStream1()">
 				<e id="uno"></e>
-				<div class="squareAlign">Climate Change 101 with Bill Nye</div>
+				<div  class="squareAlign">Climate Change 101 with Bill Nye</div>
 			</ul>
-			<ul>
+			<ul ng-click="showStream2()">
 				<e id="does"></e>
-				<div class="squareAlign">Continental Drift 101</div>
+				<div  class="squareAlign">Continental Drift 101</div>
 			</ul>
-			<ul>
+			<ul ng-click="showStream3()">
 				<e id="tres"></e>
-				<div class="squareAlign">Weather 101</div>
+				<div  class="squareAlign">Weather 101</div>
 			</ul>
-			<ul>
+			<ul ng-click="showStream4()">
 				<e id="quatro"></e>
-				<div class="squareAlign">Hurricanes 101</div>
+				<div  class="squareAlign">Hurricanes 101</div>
 			</ul>
-			<ul>
+			<ul ng-click="showStream5()">
 				<e id="cinco"></e>
-				<div class="squareAlign">Tornadoes 101</div>
+				<div  class="squareAlign">Tornadoes 101</div>
 			</ul>
 		</div>
 		<h4>Climate Change 101 With Bill Nye</h4>
@@ -136,9 +142,8 @@
 								<span id="caseLabel">
 									<input type="file" name='image' class="inputfile">
 									<label for="file" id="sleeve1">Choose a file</label>
-								</span><button type ="submit" id="submitButton" ng-click>Submit</button>
-                //made changes here
-								</form>
+								</span><button type="submit" id="submitButton" ng-click>Submit</button> //made changes here
+							</form>
 							<br>
 
 
