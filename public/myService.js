@@ -4,17 +4,17 @@ angular.module('myApp').service('myService', function($http) {
             url: 'https://newsapi.org/v1/articles?source=national-geographic&sortBy=top&apiKey=c540556d4e96488dade1fd06081fff3f',
             method: 'GET'
         }).then(function(response) {
-            console.log(response)
+
             return response;
 
         })
     }
-    this.getAllPhotos = function() {
-        return $http({
-            method: 'GET',
-            url: '/api/photo'
-        })
-    }
+    // this.getAllPhotos = function() {
+    //     return $http({
+    //         method: 'GET',
+    //         url: '/api/photo'
+    //     })
+    // }
     this.postPhoto = function(author, hashtags, comments, image_url) {
         return $http({
             method: 'POST',
@@ -23,7 +23,7 @@ angular.module('myApp').service('myService', function($http) {
                 name: author,
                 filterName: hashtags,
                 extra: comments,
-                image: image_url,
+                filename: image_url,
 
 
             }
@@ -34,8 +34,8 @@ angular.module('myApp').service('myService', function($http) {
         return $http({
             method: 'GET',
             url: 'http://localhost:3001/api/picture'
-        }).then(function(response) {
-            console.log(response)
         })
     }
+
+
 });

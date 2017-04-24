@@ -1770,18 +1770,17 @@ margin-bottom: 3vh;
 }
 .wrapDay {
 	float: left;
-	width: 84vw;
-	height: 70vh;
-
-	margin-top: 2vh;
-	margin-left: 10vw;
+    width: 84vw;
+    height: 70vh;
+    margin-top: 2vh;
+    margin-left: 6vw;
 
 div {
 	width: 25vw;
-	height: 65vh;
-	float: left;
-	margin-left: 2vw;
-	margin-top: 5vh;
+    height: 65vh;
+    float: left;
+    margin-left: 3vw;
+    margin-top: 5vh;
 
 }
 }
@@ -2370,12 +2369,7 @@ background-size: cover;
     margin-top: 3px;
 		}
 }
-.gallery {
-	height: 80vh;
-	width: 100vw;
-	background-color: black;
-	float: left;
-}
+
 #specbox {
 	label:focus {
 	outline: 1px dotted #000;
@@ -2432,5 +2426,63 @@ background-size: cover;
 	form {
 		margin-top: 5vh;
 	}
+
+}
+#lastAd {
+	height: 30vh;
+width: 35vw;
+background-image: url(https://www.movienewsguide.com/wp-content/uploads/2017/02/Genius.png);
+background-size: cover;
+background-repeat: no-repeat;
+margin-left: 32vw;
+margin-top: 3vh;
+}
+.newFiller1 {
+	height: 36vh;
+    width: 100vw;
+    float: left;
+    background-color: #F2F2F2;
+}
+.gallery {
+	height: 30vh;
+	width: 20%;
+	background-color: white;
+	float: left;
+
+	margin-left: 3vw;
+	img {
+
+		width: 100%;
+    float: left;
+    margin-right: 3vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
+    height: 100%;
+	}
+	h3 {
+    border-bottom: black solid 1px;
+    margin-top: 4vh;
+		font-family: 'Didact Gothic';
+		letter-spacing: .1em;
+		font-weight: 100;
+		color: white
+
+	}
+	p {
+		font-family: 'Arimo';
+		letter-spacing: .1em;
+		font-weight: 100;
+		color: white;
+	}
+
+}
+.generic {
+	height: 80vh;
+	width: 100vw;
+	float: left;
+	padding-top: 5vh;
+	padding-left: 10vw;
+    padding-right: 10vw;
+background-color: black;
 
 }

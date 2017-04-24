@@ -1,4 +1,4 @@
-<div class="adFiller"></div>
+<div class='newFiller'></div>
 <h1 id="theBigg">ENVIRONMENT</h1>
 <div class="bigPic">
 	<h2>Striking Photos Show The People v. Climate Change</h2>
@@ -87,7 +87,9 @@
 	</div>
 </div>
 
-<div class="newFiller"></div>
+<div class="newFiller1">
+	<div id="lastAd"></div>
+</div>
 
 <div class="yearsCase">
 	<h1 class="magTitle">'YEARS OF LIVING DANGEROUSLY'</h1>
@@ -131,18 +133,19 @@
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
-							<h4 class="modal-title"></h4>
+							<h4 class="modal-title">Fill Out Info</h4>
 						</div>
 						<div class="modal-body">
-							<span>Author</span><input type="text" ng-model='author'>
-							<span>#Filter</span><input type="text" ng-model='filter'>
-							<span>Description</span> <input type="text" ng-model='comments'>
+							<form action="/climate" method="POST"  enctype="multipart/form-data" id="specBox">
+							<span>Author</span><input type="text" name="author" ng-model='author'>
+							<span>#Filter</span><input type="text" name="filter" ng-model='filter'>
+							<span>Description</span> <input type="text" name="description" ng-model='comments'>
 
-							<form action="/api/picture" method='post' enctype="multipart/form-data" id="specBox">
+
 								<span id="caseLabel">
-									<input type="file" name='image' class="inputfile" ng-model="takePic">
+									<input type="file" name='image' class="inputfile" ng-model="filename">
 									<label for="file" id="sleeve1">Choose a file</label>
-								</span><button type="submit" id="submitButton" ng-click>Submit</button> //made changes here
+								</span><button type="submit" id="submitButton">Submit</button>
 							</form>
 							<br>
 
@@ -158,7 +161,8 @@
 				</div>
 			</div>
 			<div id="holdingCell2"><input type="text" placeholder="#climatechange">
-				<div id="holdingButton2"><button></button></div>
+				<div id="holdingButton2">
+					<button ng-click="showDiv()"></button></div>
 			</div>
 
 
@@ -172,7 +176,39 @@
 	</div>
 
 </div>
-<div class="gallery" ng-repeat="p in photos">
-	{{p}}
 
+
+<div class="newFiller"></div>
+
+<div class="generic" ng-show="contentPics">
+<div class="gallery" ng-repeat="p in photos">
+	<img ng-src="http://localhost:3001/photos/{{p.image_url}}"></img>
+	<h3>{{p.author}}</h3>
+	<h5>{{p.description}}</h5>
+	<p>{{p.comments}}</p>
+</div>
+</div>
+
+<div class="whiteSpace"></div>
+<div class="direct">
+	<div>
+		<h5>THE MAGAZINE</h5>
+		<p>Our iconic magazine is available in both print and digital editions.</p>
+		<ul>Subscribe</ul>
+	</div>
+	<div>
+		<h5 id="littleTitle1">THE STORE</h5>
+	<p>Your online purchases help fund our nonprofit mission of research, education, conservation, and exploration.</p>
+	<ul>Shop</ul>
+</div>
+	<div>
+		<h5 id="littleTitle2">EXPEDITIONS</h5>
+		<p>Travel the world on our guided wildlife safaris, expedition cruises, and more.</p>
+		<ul id="miniLink1">Go on a Nat Geo Trip</ul>
+	</div>
+	<div>
+		<h5 id="littleTitle3">NATIONAL GEOGRPAHIC SOCIETY</h5>
+		<p>The National Geographic Society is a global nonprofit organization committed to exploring and protecting our planet.</p>
+		<ul id="miniLink2">Learn More</ul>
+	</div>
 </div>

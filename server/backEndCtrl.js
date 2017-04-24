@@ -19,10 +19,19 @@ module.exports = {
               return res.status(500).send(err)
             } else {
               res.send(pic)
-              console.log(pic)
             }
           })
         },
+        // //JUst Made this to post data in sql table all of it////
+        // postPhoto : function(req,res,next) {
+        //   db.post_photo([req.body.author, req.body.hashtags, req.body.comments, req.body.image_url], function(err, photo){
+        //     if (err){
+        //       console.log(err)
+        //       return res.status(500).send(err)
+        //     }
+        //     return res.status(200).send('Its in')
+        //   })
+        // },
 
     findTable: function(req, res, next) {
         Db.tables.read_space([req.params.id],

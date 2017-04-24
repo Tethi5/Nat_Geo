@@ -14,6 +14,8 @@ const app = module.exports = express();
 app.use(bodyParser.json());
 
 app.use(express.static(__dirname + '/public'));
+app.use('/photos', express.static( __dirname + '/picture'));
+var filename = '';
 
 /////////INITILIZE APP///////////////////////
 
@@ -53,25 +55,29 @@ app.post('/api/photo', function(req, res, next) {
 
 let storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      console.log(file)
+
         cb(null, './picture')
     },
     filename: function (req, file, cb) {
-      filename = Date.now() + file.originalname;
+      // filename = Date.now() + file.originalname;
         cb(null, Date.now() + file.originalname)
   }
 })
 
-app.post('/climate', function(req, res) {
+app.post('/climate', bodyParser.urlencoded({ extended: false }), function(req, res) {
+
         var upload = multer({
             storage: storage
         }).single('image')
         upload(req, res, function(err) {
-          console.log(err)
-          alert('Sent your Photo!')
-          // res.redirect('#!/climate')
-          .then(alert('DOne'))
+
+filename = req.file.filename;
+        console.log(filename)
+          // res.redirect('./#!/climate')
+
+
         })
+
     });
 
 app.post('/api/photo/table', tableController.create);

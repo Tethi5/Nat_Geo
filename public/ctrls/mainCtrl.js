@@ -15,24 +15,31 @@ angular.module('myApp').controller('mainCtrl', function($scope, myService) {
 
     //////MY API's///////////s
     $scope.add = function() {
-					myService.postPhoto($scope.author, $scope.filter,$scope.comments, $scope.image)
+					myService.postPhoto($scope.author, $scope.hashtags,$scope.comments, $scope.image_url)
     }
 $scope.send = function() {
   myService.postPicture($scope.picture)
 }
 myService.getAllPhotos();
+
+
 myService.getPhoto().then(function(response) {
 
     $scope.data = response.data.articles
 
 })
+myService.getAllPhotos().then(function(response){
+  $scope.photos = response.data
+  console.log(response)
+})
+
 
 // Jquery for scroll from to
   $(window).scroll(function() {
    var winScroll = $(this).scrollTop();
-   console.log(winScroll)
+  //  console.log(winScroll)
 
-if (winScroll > 776) {
+if (winScroll > 400) {
      $('.theAd').css({
          'position': 'fixed',
          'top': 5
@@ -43,15 +50,15 @@ if (winScroll > 776) {
         'top': 5,
      });
  }
- if (winScroll > 4440 ) {
+ if (winScroll > 4095 ) {
      $('.theAd').css({
          'position': 'absolute',
-         'top': '595vh',
+         'top': '600vh',
      });
  }
 
 
- if (winScroll > 776) {
+ if (winScroll > 398) {
       $('.theAdPhoto').css({
           'position': 'fixed',
           'top': 5
@@ -62,7 +69,7 @@ if (winScroll > 776) {
          'top': 5,
       });
   }
-  if (winScroll > 1400 ) {
+  if (winScroll > 1035 ) {
       $('.theAdPhoto').css({
           'position': 'absolute',
           'top': '105vh',
@@ -99,6 +106,16 @@ if (winScroll > 776) {
   //             });
   //         }
   //     }
+$scope.contentPics = false;
+$scope.showDiv = function (){
+  $scope.contentPics = true;
+}
+
+
+
+
+
+
 
   $scope.bigAd1 = true;
 
