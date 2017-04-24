@@ -69,7 +69,8 @@ app.post('/climate', function(req, res) {
         upload(req, res, function(err) {
           console.log(err)
           alert('Sent your Photo!')
-          res.redirect('#!/climate')
+          // res.redirect('#!/climate')
+          .then(alert('DOne'))
         })
     });
 

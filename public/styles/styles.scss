@@ -1188,13 +1188,14 @@ font-size: 248%;
     position: absolute;
 	.blackBox {
 		height: 50vh;
-    width: 24vw;
-    background-color: black;
-    text-align: center;
-    padding-right: 3vw;
-    padding-left: 3vw;
-    padding-top: 4vh;
-    font-family: 'Didact Gothic';
+width: 24vw;
+background-color: black;
+text-align: center;
+padding-right: 3vw;
+padding-left: 3vw;
+padding-top: 4vh;
+font-family: 'Didact Gothic';
+margin-bottom: 5vh;
 		}
 		h7 {
 			color: white;
@@ -1218,6 +1219,21 @@ font-size: 248%;
     float: left;
     margin-top: 4vh;
     margin-left: 4vw;
+}
+h1 {
+	font-size: 150%;
+font-weight: 700;
+font-color: black;
+font-family: 'Arimo';
+padding-right: 5vw;
+padding-left: 4vw;
+margin-top: 13vh;
+}
+h8 {
+	font-family: 'Didact Gothic';
+	letter-spacing: .1em;
+	color: black;
+	font-size: 90%;
 }
 }
 #infoContent {
@@ -1410,6 +1426,7 @@ width: 27vw;
 float: right;
 margin-right: 8vw;
 margin-top: 153px;
+position: relative;
 
 	div {
 		height: 45vh;
@@ -1420,6 +1437,25 @@ margin-top: 153px;
 	    margin-left: 4vw;
 	}
 }
+.adPhoto {
+
+	height: 100vh;
+width: 27vw;
+float: right;
+margin-right: 8vw;
+margin-top: 153px;
+position: relative;
+
+	div {
+		height: 45vh;
+    width: 28vw;
+    background-image: url(https://cdn-images-1.medium.com/max/800/1*SDHpqMJjWtoO3N07O7zubA.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	    margin-left: 4vw;
+	}
+}
+
 
 .feed {
 	float: left;
@@ -1576,6 +1612,7 @@ margin-top: 153px;
     margin-left: 9vw;
     transition: all 2s ease-in-out;
     margin-top: -20vh;
+		z-index: 3;
 
 button {
 	height: 20px;
@@ -2369,10 +2406,10 @@ background-size: cover;
     width: 95px;
     color: white;
     background-color: black;
-    margin-top: 0px;
+    margin-top: 14vh;
     left: 12px;
     text-align: center;
-    height: 22px;
+    height: 24px;
     padding: 3px;
     font-size: 83%;
     border-radius: 2px;
@@ -2384,4 +2421,16 @@ background-size: cover;
 }
 #submitButton {
 	margin-top: 10vh;
+}
+.modal-body {
+	span{
+		margin-right: 30vw;
+	}
+	input {
+		margin-right: 30vw;
+	}
+	form {
+		margin-top: 5vh;
+	}
+
 }

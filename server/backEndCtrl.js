@@ -19,6 +19,7 @@ module.exports = {
               return res.status(500).send(err)
             } else {
               res.send(pic)
+              console.log(pic)
             }
           })
         },

@@ -22,23 +22,58 @@ $scope.send = function() {
 }
 myService.getAllPhotos();
 myService.getPhoto().then(function(response) {
-  console.log('working')
+
     $scope.data = response.data.articles
-    console.log($scope.data)
+
 })
 
-// Jquery for scroll from top
-$(window).scroll(function() {
-  var container = $('.theAd');
-    var minTop = $('.ad').outerHeight();
-    var maxTop = $('.whiteSpace').offset().top - container.outerHeight();
+// Jquery for scroll from to
+  $(window).scroll(function() {
+   var winScroll = $(this).scrollTop();
+   console.log(winScroll)
 
-   var winScroll = $(this).scroll(function() {
-container.css('top', Math.min( Math.max(minTop, $(document).scrollTop()), maxTop ));
-    });
-   console.log(winScroll);
+if (winScroll > 776) {
+     $('.theAd').css({
+         'position': 'fixed',
+         'top': 5
+     });
+ } else {
+     $('.theAd').css({
+        "position": 'static',
+        'top': 5,
+     });
+ }
+ if (winScroll > 4440 ) {
+     $('.theAd').css({
+         'position': 'absolute',
+         'top': '595vh',
+     });
+ }
 
-   // Fixed on scroll Ad
+
+ if (winScroll > 776) {
+      $('.theAdPhoto').css({
+          'position': 'fixed',
+          'top': 5
+      });
+  } else {
+      $('.theAdPhoto').css({
+         "position": 'static',
+         'top': 5,
+      });
+  }
+  if (winScroll > 1400 ) {
+      $('.theAdPhoto').css({
+          'position': 'absolute',
+          'top': '105vh',
+      });
+  }
+ })
+
+  //  var winScroll = $(this).scrollTop();
+  //  console.log(winScroll);
+   //
+  //  // Fixed on scroll Ad
   //  if (winScroll > 766) {
   //      $('.theAd').css({
   //          'position': 'fixed',
@@ -52,19 +87,19 @@ container.css('top', Math.min( Math.max(minTop, $(document).scrollTop()), maxTop
    //
   //     })
   //   }
-  //    if (winScroll > 4430){
-  //       $('.theAd').css({
-  //         'position': 'static',
-   //
-   //
-  //       })
-  //     } else if (winScroll >= 4440){
-  //       $('.theAd').css({
-  //         'position': 'fixed'
-  //       })
+  //         if ($window.scrollTop() > pos) {
+  //             $this.css({
+  //                 position: 'absolute',
+  //                 top: pos
+  //             });
+  //         } else {
+  //             $this.css({
+  //                 position: 'fixed',
+  //                 top: 0
+  //             });
+  //         }
   //     }
 
-    });
   $scope.bigAd1 = true;
 
   $scope.hideIt = function(){
